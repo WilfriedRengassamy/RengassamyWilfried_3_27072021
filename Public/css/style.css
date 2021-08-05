@@ -1,0 +1,9 @@
+@media (max-device-width: 480px)
+{
+    body
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
