@@ -1,0 +1,19 @@
+{
+  "name": "rengassamywilfried_3_27072021",
+  "version": "1.0.0",
+  "description": "P3 réalisation d'un site web exclusif aux smartphones, dynamisés par des animations css",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilfriedRengassamy/RengassamyWilfried_3_27072021.git"
+  },
+  "author": "Wilfried Rengassamy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WilfriedRengassamy/RengassamyWilfried_3_27072021/issues"
+  },
+  "homepage": "https://github.com/WilfriedRengassamy/RengassamyWilfried_3_27072021#readme"
+}
