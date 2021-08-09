@@ -1,0 +1,27 @@
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0em 0em 0.9em rgba(200, 200, 200, 30);
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    &__txt {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+    &__base {
+        width: 80%;
+        background-color: $btn__base--color;
+        color: black;
+    }
+    &__alt {
+        justify-content: center;
+        align-content: center;    
+        width: 60%;
+        background: linear-gradient($btn-gradient__color--top, $btn-gradient__color--bottom) ;
+        color: white;
+    }
+}
