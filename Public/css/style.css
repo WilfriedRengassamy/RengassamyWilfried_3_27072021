@@ -1,18 +1,35 @@
-/* Error: expected "{".
- *   ,
- * 1 | @media only screen and (max-device-width: 480px)
- *   |                                                 ^
- *   '
- *   sass\utils\_variables.scss 1:49  @import
- *   sass\main.scss 2:13              root stylesheet */
+@media only screen and (max-device-width: 480px) {
+  a {
+    text-decoration: none;
+  }
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 1 \2502  @media only screen and (max-device-width: 480px)\d\a   \2502                                                  ^\a   \2575 \a   sass\\utils\\_variables.scss 1:49  @import\a   sass\\main.scss 2:13              root stylesheet';
+  .btn {
+    display: flex;
+    flex-wrap: wrap;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0em 0em 0.9em #c8c8c8;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+  }
+  .btn__txt {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+  .btn__base {
+    width: 80%;
+    background-color: white;
+    color: black;
+  }
+  .btn__alt {
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    background: linear-gradient(#e872da, #9d59dc);
+    color: white;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
