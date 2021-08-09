@@ -1,11 +1,25 @@
 #local {
     @include block;
-    height: 6rem;
-    background-color: $local-color;
+    height: fit-content;
+    &__txt {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
 }
 
 #discover {
     @include block;
-    height: 10rem;
+    padding-top: 6rem;
+    padding-bottom: 12rem;
+    height: 33rem;
     background-color: $discover-color;
+    &__data {
+        width: 75%;
+    }
+}
+
+#fonct {
+    @include block;
+    background-color: white;
+    height: fit-content;
 }
