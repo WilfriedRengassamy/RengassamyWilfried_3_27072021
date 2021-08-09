@@ -1,0 +1,11 @@
+#local {
+    @include block;
+    height: 6rem;
+    background-color: $local-color;
+}
+
+#discover {
+    @include block;
+    height: 10rem;
+    background-color: $discover-color;
+}

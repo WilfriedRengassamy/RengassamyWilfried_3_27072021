@@ -1,0 +1,15 @@
+header {
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 11rem;
+    background-color: $btn__base--color;
+    box-shadow: 0rem 0rem 1rem rgba($color: #000000, $alpha: 0.9);
+    & a .header__logo {
+        height: 5rem;
+    }
+}
+
