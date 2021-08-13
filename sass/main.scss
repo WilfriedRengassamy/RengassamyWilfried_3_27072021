@@ -1,21 +1,15 @@
 @media only screen and (max-device-width: 480px) {
-    body {
-        text-align: center;
-        margin: 0%;
-        padding: 0%;
-        background-color: #eaeaea;
-    }
 
+    @import "./base/base";
     @import "./utils/variables";
     @import "./utils/functions";
     @import "./utils/mixins";
     @import "./utils/extensions";
-    @import "./base/base";
     @import "./base/typography";
+    @import "./layouts/container";
     @import "./components/buttons";
     @import "./layouts/header";
     @import "./layouts/nav";
-    @import "./layouts/container";
     @import "./layouts/form";
     @import "./pages/work";
     @import "./pages/about";
