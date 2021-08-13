@@ -1,157 +1,17 @@
-@media only screen and (max-device-width: 480px) {
-  body {
-    text-align: center;
-    margin: 0%;
-    padding: 0%;
-    background-color: #eaeaea;
-  }
+/* Error: Can't find stylesheet to import.
+ *    ,
+ * 10 |     @import "./utils/functions";
+ *    |             ^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   sass\main.scss 10:13  root stylesheet */
 
-  .tile {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    margin-bottom: 3rem;
-    background-color: white;
-    width: 90%;
-    height: 15em;
-    border-radius: 1.2em;
-    box-shadow: 0em 0em 0.9em #c8c8c8;
-  }
-  .tile__pic {
-    background-size: cover;
-    border-radius: 1em 1em 0em 0em;
-    width: 100%;
-    height: 72%;
-    background-position-y: 0px;
-  }
-  .tile__info {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding-left: 0.5em;
-    margin-top: -4px;
-  }
-  .tile__info p {
-    margin-top: -10px;
-    font-size: 0.8em;
-  }
-
-  body {
-    font-family: "Roboto";
-    font-size: 2.6rem;
-    font-weight: thin;
-  }
-
-  h1 {
-    font-family: "shrikhand";
-  }
-
-  h2 {
-    font-size: 4rem;
-    font-weight: 900;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  nav ul {
-    text-decoration: none;
-  }
-
-  .btn {
-    display: flex;
-    flex-wrap: wrap;
-    height: 3rem;
-    border-radius: 4rem;
-    box-shadow: 0em 0em 0.9em #c8c8c8;
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
-    font-weight: bold;
-  }
-  .btn__txt {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    font-size: 2.3rem;
-    font-weight: 400;
-  }
-  .btn__base {
-    margin-bottom: 4rem;
-    width: 90%;
-    height: 12rem;
-    background-color: #f6f6f6;
-    color: black;
-  }
-  .btn__alt {
-    justify-content: center;
-    align-content: center;
-    padding-left: 3.4rem;
-    padding-right: 3.4rem;
-    width: fit-content;
-    height: 8.2rem;
-    background: linear-gradient(-369deg, #9356DC, #FF79DA);
-    color: white;
-    font-weight: 500;
-  }
-  .btn__sticker {
-    align-self: center;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 2rem;
-    background-color: #9356DC;
-    color: white;
-    font-weight: 500;
-  }
-
-  header {
-    margin: 0%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: 11rem;
-    background-color: white;
-    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.9);
-  }
-  header a .header__logo {
-    height: 5rem;
-  }
-
-  #local {
-    justify-content: center;
-    margin: 0%;
-    width: 100%;
-    height: fit-content;
-  }
-  #local__txt {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-
-  #discover {
-    justify-content: center;
-    margin: 0%;
-    width: 100%;
-    padding-top: 6rem;
-    padding-bottom: 12rem;
-    height: 33rem;
-    background-color: #f6f6f6;
-  }
-  #discover__data {
-    width: 75%;
-  }
-
-  #fonct {
-    justify-content: center;
-    margin: 0%;
-    width: 100%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: white;
-    height: fit-content;
-  }
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 10 \2502      @import \"./utils/functions\";\d\a    \2502              ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\main.scss 10:13  root stylesheet";
 }
-
-/*# sourceMappingURL=style.css.map */

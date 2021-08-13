@@ -1,0 +1,16 @@
+footer {
+    @include block;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: $color-footer;
+    nav {
+        text-align: left;
+        ul li {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            list-style-type: none;       
+            color: $btn__base--color;
+        }
+    }
+}
