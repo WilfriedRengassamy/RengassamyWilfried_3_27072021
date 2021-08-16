@@ -1,5 +1,21 @@
 @mixin block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0%;
     width: 100%;
 }
 
+@mixin btn_base {
+    margin-bottom: 4rem;
+    width: 90%;
+    height: 12rem;
+    color: black;
+}
+
+@mixin justify_left {
+    text-align: left;
+    h2 {
+        padding-left: 5%;
+    }
+}

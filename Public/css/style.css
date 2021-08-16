@@ -9,7 +9,6 @@
   body {
     font-family: "Roboto";
     font-size: 2.6rem;
-    font-weight: thin;
   }
 
   h1 {
@@ -21,11 +20,46 @@
     font-weight: 900;
   }
 
+  p {
+    font-weight: 200;
+  }
+
   a {
     text-decoration: none;
   }
 
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0%;
+    width: 100%;
+  }
+  .container__resto1 {
+    background-image: url(../pics/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: 125%;
+    background-repeat: no-repeat;
+  }
+  .container__resto2 {
+    background-image: url(../pics/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background-size: 125%;
+    background-repeat: no-repeat;
+  }
+  .container__resto3 {
+    background-image: url(../pics/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-size: 125%;
+    background-repeat: no-repeat;
+  }
+  .container__resto4 {
+    background-image: url(../pics/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    background-size: 125%;
+    background-repeat: no-repeat;
+  }
+
   #local {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0%;
     width: 100%;
     height: fit-content;
@@ -36,6 +70,9 @@
   }
 
   #discover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0%;
     width: 100%;
     padding-top: 6rem;
@@ -48,17 +85,63 @@
   }
 
   #fonct {
-    margin: 0%;
-    width: 100%;
+    text-align: left;
+    flex-direction: column;
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: white;
     height: fit-content;
   }
+  #fonct h2 {
+    padding-left: 5%;
+  }
+
+  #restaurants {
+    text-align: left;
+  }
+  #restaurants h2 {
+    padding-left: 5%;
+  }
+
+  /* .bckgrnd {
+      @include block;
+      height: 50rem;
+      background-size: cover;
+  } */
+  .carte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0%;
+    width: 100%;
+    margin-top: 30rem;
+    border-radius: 10rem;
+    text-align: left;
+    background-color: #f6f6f6;
+  }
+  .carte__menu {
+    width: 100%;
+    margin: 0%;
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  .carte__menu h2 {
+    padding-left: 5%;
+  }
+  .carte__title--underline {
+    height: 0.5rem;
+    width: 6rem;
+    margin-top: -1.5rem;
+    margin-bottom: 2.5rem;
+    background-color: #99E2D0;
+  }
 
   .btn {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0%;
+    width: 100%;
     height: 3rem;
     border-radius: 4rem;
     box-shadow: 0em 0em 0.9em #c8c8c8;
@@ -69,6 +152,9 @@
   .btn__txt {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0%;
+    width: 100%;
     align-self: center;
     font-size: 2.3rem;
     font-weight: 400;
@@ -77,8 +163,15 @@
     margin-bottom: 4rem;
     width: 90%;
     height: 12rem;
-    background-color: #f6f6f6;
     color: black;
+    background-color: #f6f6f6;
+  }
+  .btn__carte {
+    margin-bottom: 4rem;
+    width: 90%;
+    height: 12rem;
+    color: black;
+    background-color: white;
   }
   .btn__alt {
     padding-left: 3.4rem;
@@ -90,6 +183,7 @@
     font-weight: 500;
   }
   .btn__sticker {
+    text-align: center;
     align-self: center;
     height: 4rem;
     width: 4rem;
@@ -102,6 +196,9 @@
   .tile {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0%;
+    width: 100%;
     margin: auto;
     margin-bottom: 3rem;
     background-color: white;
@@ -120,6 +217,9 @@
   .tile__info {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0%;
+    width: 100%;
     flex-direction: column;
     padding-left: 0.5em;
     margin-top: -4px;
@@ -145,8 +245,12 @@
   }
 
   footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0%;
     width: 100%;
+    justify-content: left;
     padding-left: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
