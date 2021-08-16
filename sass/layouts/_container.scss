@@ -20,6 +20,8 @@
 
 #fonct {
     @include block;
+    text-align: left;
+    flex-direction: column;
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: white;
@@ -29,4 +31,5 @@
 .bckgrnd {
     @include block;
     height: auto;
+    background-size: cover;
 }

@@ -9,7 +9,6 @@
   body {
     font-family: "Roboto";
     font-size: 2.6rem;
-    font-weight: thin;
   }
 
   h1 {
@@ -26,6 +25,9 @@
   }
 
   #local {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0%;
     width: 100%;
     height: fit-content;
@@ -36,6 +38,9 @@
   }
 
   #discover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0%;
     width: 100%;
     padding-top: 6rem;
@@ -48,8 +53,13 @@
   }
 
   #fonct {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0%;
     width: 100%;
+    text-align: left;
+    flex-direction: column;
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: white;
@@ -57,9 +67,13 @@
   }
 
   .bckgrnd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0%;
     width: 100%;
     height: auto;
+    background-size: cover;
   }
 
   .btn {
@@ -96,6 +110,7 @@
     font-weight: 500;
   }
   .btn__sticker {
+    text-align: center;
     align-self: center;
     height: 4rem;
     width: 4rem;
@@ -151,8 +166,12 @@
   }
 
   footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0%;
     width: 100%;
+    justify-content: left;
     padding-left: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
