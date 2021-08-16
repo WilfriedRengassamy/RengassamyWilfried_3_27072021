@@ -25,3 +25,8 @@
     background-color: white;
     height: fit-content;
 }
+
+.bckgrnd {
+    @include block;
+    height: auto;
+}

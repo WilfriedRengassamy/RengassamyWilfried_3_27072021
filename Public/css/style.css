@@ -56,6 +56,12 @@
     height: fit-content;
   }
 
+  .bckgrnd {
+    margin: 0%;
+    width: 100%;
+    height: auto;
+  }
+
   .btn {
     display: flex;
     flex-wrap: wrap;
