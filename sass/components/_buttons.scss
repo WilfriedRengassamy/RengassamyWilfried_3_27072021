@@ -1,6 +1,5 @@
 .btn {
-    display: flex;
-    flex-wrap: wrap;
+    @include block;
     height: 3rem;
     border-radius: 4rem;
     box-shadow: 0em 0em 0.9em rgba(200, 200, 200, 30);
@@ -8,18 +7,18 @@
     margin-bottom: 0.3rem;
     font-weight: bold;
     &__txt {
-        display: flex;
-        flex-wrap: wrap;
+        @include block;
         align-self: center;
         font-size: 2.3rem;
         font-weight: 400;
     }
     &__base {
-        margin-bottom: 4rem;
-        width: 90%;
-        height: 12rem;
+        @include btn_base;
         background-color: $discover-color;
-        color: black;
+    }
+    &__carte {
+        @include btn_base;
+        background-color: $btn__base--color;
     }
     &__alt {
         padding-left: 3.4rem;
@@ -43,9 +42,8 @@
 }
 
 .tile {
-	display: flex;
-	flex-wrap: wrap;
-	margin: auto;
+    @include block;
+    margin: auto;
     margin-bottom: 3rem;
 	background-color: white;
 	width: 90%;
@@ -60,8 +58,7 @@
         background-position-y: 0px;
     }
     &__info {
-        display: flex;
-        flex-wrap: wrap;
+        @include block;
         flex-direction: column;
         padding-left: 0.5em;
         margin-top: -4px;
