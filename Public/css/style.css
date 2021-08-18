@@ -150,14 +150,13 @@
     font-weight: bold;
   }
   .btn__txt {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0%;
-    width: 100%;
+    width: 80%;
     align-self: center;
     font-size: 2.3rem;
     font-weight: 400;
+  }
+  .btn__txt--white {
+    flex-direction: row;
   }
   .btn__base {
     margin-bottom: 4rem;
@@ -171,7 +170,9 @@
     width: 90%;
     height: 12rem;
     color: black;
+    justify-content: flex-start;
     background-color: white;
+    border-radius: 3rem;
   }
   .btn__alt {
     padding-left: 3.4rem;

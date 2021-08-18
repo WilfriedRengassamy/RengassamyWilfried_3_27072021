@@ -7,10 +7,13 @@
     margin-bottom: 0.3rem;
     font-weight: bold;
     &__txt {
-        @include block;
+        width: 80%;
         align-self: center;
         font-size: 2.3rem;
         font-weight: 400;
+        &--white {
+            flex-direction: row
+        }
     }
     &__base {
         @include btn_base;
@@ -18,7 +21,9 @@
     }
     &__carte {
         @include btn_base;
+        justify-content: flex-start;
         background-color: $btn__base--color;
+        border-radius: 3rem;
     }
     &__alt {
         padding-left: 3.4rem;
