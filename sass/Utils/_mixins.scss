@@ -19,3 +19,8 @@
         padding-left: 5%;
     }
 }
+
+@mixin btn__txt {
+    display: block;
+    height: fit-content;
+}
