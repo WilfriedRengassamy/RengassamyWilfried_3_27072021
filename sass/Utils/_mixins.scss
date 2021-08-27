@@ -21,6 +21,10 @@
 }
 
 @mixin btn__txt {
-    display: block;
-    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    overflow: hidden;
+    //height: fit-content;
 }
