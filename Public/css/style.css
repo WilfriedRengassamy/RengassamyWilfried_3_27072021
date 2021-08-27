@@ -155,6 +155,7 @@
   .btn__txt {
     width: 80%;
     align-self: center;
+    text-align: center;
     font-size: 2.3rem;
     font-weight: 400;
   }
@@ -217,15 +218,34 @@
     color: white;
     font-weight: 500;
   }
+  .btn__alt--txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    overflow: hidden;
+    align-self: center;
+    width: fit-content;
+    font-weight: 400;
+  }
   .btn__sticker {
     text-align: center;
     align-self: center;
     height: 4rem;
     width: 4rem;
+    margin-left: -13rem;
     border-radius: 2rem;
     background-color: #9356DC;
     color: white;
     font-weight: 500;
+  }
+  .btn__sticker--txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    overflow: hidden;
+    padding-top: 0.3rem;
   }
 
   .tile {
