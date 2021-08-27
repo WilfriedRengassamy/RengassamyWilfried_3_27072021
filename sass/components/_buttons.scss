@@ -1,10 +1,10 @@
 .btn {
     @include block;
+    margin: 1rem auto 0;
+    padding-left: 1rem;
     height: 3rem;
     border-radius: 4rem;
     box-shadow: 0em 0em 0.9em rgba(200, 200, 200, 30);
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
     font-weight: bold;
     &__txt {
         width: 80%;
@@ -21,31 +21,26 @@
     }
     &__carte {
         @include btn_base;
-        justify-content: flex-start;
-        flex-direction: column;
         background-color: $btn__base--color;
         border-radius: 3rem;
         overflow: hidden;
         
         &--valid {
-            width: 50%;
+            width: 0;
             height: 100%;
             background-color: $color-third;
             transform-origin: right;
-            transform: scaleX(0);
+            transform: translateX(6rem);
             transition: transform 400ms ease-in-out;
         }
         &:active {
-            & + .btn__carte--valid {
-            transform: scaleX(.1);
+            & > .btn__carte--valid {
+            transform: translateX(0);
             }
         }
         &--txt {
-            h4 {
-                @include btn__txt;
-            }
+            @include btn__txt;
             p {
-                @include btn__txt;
                 font-size: 2rem;
             }
         }
