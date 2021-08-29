@@ -186,15 +186,16 @@
     border-radius: 3rem;
     overflow: hidden;
   }
-  .btn__carte:active > .btn__carte--valid {
-    transform: scaleX(0.1);
-    animation-name: btncartevalid 300ms ease-in-out;
+  .btn__carte:active + .btn__carte--valid {
+    transform: translateX(0.1);
   }
   .btn__carte--valid {
     width: 0;
     height: 100%;
     background-color: #99E2D0;
     transform-origin: right;
+    transform: translateX(0);
+    transition: transform 400ms ease-in-out;
   }
   .btn__carte--txt {
     display: flex;
