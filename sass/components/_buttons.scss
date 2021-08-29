@@ -1,3 +1,12 @@
+@keyframes btncartevalid {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(.1);
+    }
+}
+
 .btn {
     @include block;
     margin: 1rem auto 0;
@@ -25,31 +34,40 @@
         background-color: $btn__base--color;
         border-radius: 3rem;
         overflow: hidden;
-        
+        &:active {
+            & > .btn__carte--valid {
+                transform: scaleX(.1);
+                animation-name: btncartevalid 300ms ease-in-out;
+            }
+        }
         &--valid {
             width: 0;
             height: 100%;
             background-color: $color-third;
             transform-origin: right;
-            transform: translateX(6rem);
-            transition: transform 400ms ease-in-out;
-        }
-        &:active {
-            & > .btn__carte--valid {
-            transform: translateX(0);
-            }
+            //transform: scaleX(.1);
+            //transition: transform 400ms ease-in-out;
         }
         &--txt {
             @include btn__txt;
+            h4 {
+                margin-top: 2.5rem;
+            }
             p {
-                font-size: 2rem;
+                margin-top: -2.3rem;
+                font-size: 2.3rem;
+                font-size: 500;
             }
         }
         &--price {
             @include btn__txt;
+            margin-top: -2rem;
+            margin-bottom: 0rem;
             justify-self: end;
-            font-size: 2rem;
-            font-weight: 600;
+            height: fit-content;
+            width: fit-content;
+            //font-size: 2rem;
+            font-weight: 300;
         }
 
     }
