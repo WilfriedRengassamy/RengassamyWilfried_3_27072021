@@ -64,7 +64,7 @@
 .carte {
     @include block;
     margin-top: 30rem;
-    border-radius: 10rem;
+    border-radius: 10rem 10rem 0 0;
     text-align: left;
     background-color: $discover-color;
     &__menu {
