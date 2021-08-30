@@ -1,340 +1,342 @@
-@media only screen and (max-device-width: 480px) {
-  body {
-    text-align: center;
-    margin: 0%;
-    padding: 0%;
-    background-color: #eaeaea;
-  }
+body {
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  background-color: #eaeaea;
+}
 
-  body {
-    font-family: "Roboto";
-    font-size: 2.6rem;
-  }
+body {
+  font-family: "Roboto";
+  font-size: 2.6rem;
+}
 
-  h1 {
-    font-family: "shrikhand";
-  }
+h1 {
+  font-family: "shrikhand";
+}
 
-  h2 {
-    font-size: 4rem;
-    font-weight: 900;
-  }
+h2 {
+  font-size: 4rem;
+  font-weight: 900;
+}
 
-  p {
-    font-weight: 200;
-  }
+p {
+  font-weight: 200;
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0%;
-    width: 100%;
-  }
-  .container__resto1 {
-    background-image: url(../pics/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-    background-size: 125%;
-    background-repeat: no-repeat;
-  }
-  .container__resto2 {
-    background-image: url(../pics/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-    background-size: 125%;
-    background-repeat: no-repeat;
-  }
-  .container__resto3 {
-    background-image: url(../pics/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-    background-size: 125%;
-    background-repeat: no-repeat;
-  }
-  .container__resto4 {
-    background-image: url(../pics/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-    background-size: 125%;
-    background-repeat: no-repeat;
-  }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0%;
+  width: 100%;
+}
+.container__resto1 {
+  background-image: url(../pics/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: 125%;
+  background-repeat: no-repeat;
+}
+.container__resto2 {
+  background-image: url(../pics/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: 125%;
+  background-repeat: no-repeat;
+}
+.container__resto3 {
+  background-image: url(../pics/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: 125%;
+  background-repeat: no-repeat;
+}
+.container__resto4 {
+  background-image: url(../pics/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: 125%;
+  background-repeat: no-repeat;
+}
 
-  #local {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0%;
-    width: 100%;
-    height: fit-content;
-  }
-  #local__txt {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
+#local {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0%;
+  width: 100%;
+  height: fit-content;
+}
+#local__txt {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 
-  #discover {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0%;
-    width: 100%;
-    padding-top: 6rem;
-    padding-bottom: 12rem;
-    height: 33rem;
-    background-color: #f6f6f6;
-  }
-  #discover__data {
-    width: 75%;
-  }
+#discover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0%;
+  width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+  height: 33rem;
+  background-color: #f6f6f6;
+}
+#discover__data {
+  width: 75%;
+}
 
-  #fonct {
-    text-align: left;
-    flex-direction: column;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: white;
-    height: fit-content;
-  }
-  #fonct h2 {
-    padding-left: 5%;
-  }
+#fonct {
+  text-align: left;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: white;
+  height: fit-content;
+}
+#fonct h2 {
+  padding-left: 5%;
+}
 
-  #restaurants {
-    text-align: left;
-  }
-  #restaurants h2 {
-    padding-left: 5%;
-  }
+#restaurants {
+  text-align: left;
+}
+#restaurants h2 {
+  padding-left: 5%;
+}
 
-  /* .bckgrnd {
-      @include block;
-      height: 50rem;
-      background-size: cover;
-  } */
-  .carte {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0%;
-    width: 100%;
-    margin-top: 30rem;
-    border-radius: 10rem;
-    text-align: left;
-    background-color: #f6f6f6;
-  }
-  .carte__menu {
-    width: 100%;
-    margin: 0%;
-    text-align: left;
-    font-size: 2.5rem;
-  }
-  .carte__menu h2 {
-    padding-left: 5%;
-  }
-  .carte__title {
-    padding-left: 2.5rem;
-  }
-  .carte__title--underline {
-    height: 0.5rem;
-    width: 6rem;
-    margin-top: -1.5rem;
-    margin-bottom: 2.5rem;
-    background-color: #99E2D0;
-  }
-
-  @keyframes btncartevalid {
-    from {
-      transform: scaleX(0);
-    }
-    to {
-      transform: scaleX(0.1);
-    }
-  }
-  .btn {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0%;
-    width: 100%;
-    margin: 1rem auto 0;
-    padding-left: 1rem;
-    height: 3rem;
-    border-radius: 4rem;
-    box-shadow: 0em 0em 0.9em #c8c8c8;
-    font-weight: bold;
-  }
-  .btn__txt {
-    width: 80%;
-    align-self: center;
-    text-align: center;
-    font-size: 2.3rem;
-    font-weight: 400;
-  }
-  .btn__txt--white {
-    flex-direction: row;
-  }
-  .btn__base {
-    margin-bottom: 4rem;
-    width: 90%;
-    height: 12rem;
-    color: black;
-    background-color: #f6f6f6;
-  }
-  .btn__carte {
-    margin-bottom: 4rem;
-    width: 90%;
-    height: 12rem;
-    color: black;
-    background-color: white;
-    border-radius: 3rem;
-    overflow: hidden;
-  }
-  .btn__carte:active > .btn__carte--valid {
-    transform: scaleX(0.1);
-    animation-name: btncartevalid 300ms ease-in-out;
-  }
-  .btn__carte--valid {
-    width: 0;
-    height: 100%;
-    background-color: #99E2D0;
-    transform-origin: right;
-  }
-  .btn__carte--txt {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 95%;
-    overflow: hidden;
-  }
-  .btn__carte--txt h4 {
-    margin-top: 2.5rem;
-  }
-  .btn__carte--txt p {
-    margin-top: -2.3rem;
-    font-size: 2.3rem;
-    font-size: 500;
-  }
-  .btn__carte--price {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 95%;
-    overflow: hidden;
-    margin-top: -2rem;
-    margin-bottom: 0rem;
-    justify-self: end;
-    height: fit-content;
-    width: fit-content;
-    font-weight: 300;
-  }
-  .btn__alt {
-    padding-left: 3.4rem;
-    padding-right: 3.4rem;
-    width: fit-content;
-    height: 8.2rem;
-    background: linear-gradient(-369deg, #9356DC, #FF79DA);
-    color: white;
-    font-weight: 500;
-  }
-  .btn__alt--txt {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 95%;
-    overflow: hidden;
-    align-self: center;
-    width: fit-content;
-    font-weight: 400;
-  }
-  .btn__sticker {
-    text-align: center;
-    align-self: center;
-    height: 4rem;
-    width: 4rem;
-    margin-left: -13rem;
-    border-radius: 2rem;
-    background-color: #9356DC;
-    color: white;
-    font-weight: 500;
-  }
-  .btn__sticker--txt {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 95%;
-    overflow: hidden;
-    padding-top: 0.3rem;
-  }
-
-  .tile {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0%;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 3rem;
-    background-color: white;
-    width: 90%;
-    height: 15em;
-    border-radius: 1.2em;
-    box-shadow: 0em 0em 0.9em #c8c8c8;
-  }
-  .tile__pic {
+/* .bckgrnd {
+    @include block;
+    height: 50rem;
     background-size: cover;
-    border-radius: 1em 1em 0em 0em;
-    width: 100%;
-    height: 72%;
-    background-position-y: 0px;
-  }
-  .tile__info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0%;
-    width: 100%;
-    flex-direction: column;
-    padding-left: 0.5em;
-    margin-top: -4px;
-  }
-  .tile__info p {
-    margin-top: -10px;
-    font-size: 0.8em;
-  }
+} */
+.carte {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0%;
+  width: 100%;
+  margin-top: 30rem;
+  border-radius: 10rem;
+  text-align: left;
+  background-color: #f6f6f6;
+}
+.carte__menu {
+  width: 100%;
+  margin: 0%;
+  text-align: left;
+  font-size: 2.5rem;
+}
+.carte__menu h2 {
+  padding-left: 5%;
+}
+.carte__title {
+  padding-left: 2.5rem;
+}
+.carte__title--underline {
+  height: 0.5rem;
+  width: 6rem;
+  margin-top: -1.5rem;
+  margin-bottom: 2.5rem;
+  background-color: #99E2D0;
+}
 
-  header {
-    margin: 0%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: 11rem;
-    background-color: white;
-    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.9);
+@keyframes btncartevalid {
+  from {
+    transform: scaleX(0);
   }
-  header a .header__logo {
-    height: 5rem;
+  to {
+    transform: scaleX(0.1);
   }
+}
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0%;
+  width: 100%;
+  margin: 1rem auto 0;
+  padding-left: 1rem;
+  height: 3rem;
+  border-radius: 4rem;
+  box-shadow: 0em 0em 0.9em #c8c8c8;
+  font-weight: bold;
+}
+.btn__txt {
+  width: 80%;
+  align-self: center;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+.btn__txt--white {
+  flex-direction: row;
+}
+.btn__base {
+  margin-bottom: 4rem;
+  width: 90%;
+  height: 12rem;
+  color: black;
+  background-color: #f6f6f6;
+}
+.btn__carte {
+  margin-bottom: 4rem;
+  width: 90%;
+  height: 12rem;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.btn__carte:hover > .btn__carte--valid {
+  background-color: red;
+  transform: translateX(45px);
+}
+.btn__carte--valid {
+  width: 50px;
+  height: 100%;
+  background-color: #99E2D0;
+  transform-origin: right;
+  transform: translateX(0px);
+  transition: transform 300ms ease-in-out;
+}
+.btn__carte--txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+  overflow: hidden;
+}
+.btn__carte--txt h4 {
+  margin-top: 2.5rem;
+}
+.btn__carte--txt p {
+  margin-top: -2.3rem;
+  font-size: 2.3rem;
+  font-size: 500;
+}
+.btn__carte--price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+  overflow: hidden;
+  margin-top: -2rem;
+  margin-bottom: 0rem;
+  justify-self: end;
+  height: fit-content;
+  width: fit-content;
+  font-weight: 300;
+}
+.btn__alt {
+  padding-left: 3.4rem;
+  padding-right: 3.4rem;
+  width: fit-content;
+  height: 8.2rem;
+  background: linear-gradient(-369deg, #9356DC, #FF79DA);
+  color: white;
+  font-weight: 500;
+}
+.btn__alt--txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+  overflow: hidden;
+  align-self: center;
+  width: fit-content;
+  font-weight: 400;
+}
+.btn__sticker {
+  text-align: center;
+  align-self: center;
+  height: 4rem;
+  width: 4rem;
+  margin-left: -13rem;
+  border-radius: 2rem;
+  background-color: #9356DC;
+  color: white;
+  font-weight: 500;
+}
+.btn__sticker--txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+  overflow: hidden;
+  padding-top: 0.3rem;
+}
 
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0%;
-    width: 100%;
-    justify-content: left;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: #353535;
-  }
-  footer nav {
-    text-align: left;
-  }
-  footer nav ul li {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    list-style-type: none;
-    color: white;
-  }
+.tile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0%;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 3rem;
+  background-color: white;
+  width: 90%;
+  height: 15em;
+  border-radius: 1.2em;
+  box-shadow: 0em 0em 0.9em #c8c8c8;
+}
+.tile__pic {
+  background-size: cover;
+  border-radius: 1em 1em 0em 0em;
+  width: 100%;
+  height: 72%;
+  background-position-y: 0px;
+}
+.tile__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0%;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 0.5em;
+  margin-top: -4px;
+}
+.tile__info p {
+  margin-top: -10px;
+  font-size: 0.8em;
+}
+
+header {
+  margin: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 11rem;
+  background-color: white;
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.9);
+}
+header a .header__logo {
+  height: 5rem;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0%;
+  width: 100%;
+  justify-content: left;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #353535;
+}
+footer nav {
+  text-align: left;
+}
+footer nav ul li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  list-style-type: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

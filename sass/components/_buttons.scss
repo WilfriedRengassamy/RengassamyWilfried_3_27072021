@@ -31,22 +31,25 @@
     }
     &__carte {
         @include btn_base;
+        display: flex;
+        flex-direction: row;
         background-color: $btn__base--color;
         border-radius: 3rem;
         overflow: hidden;
-        &:active {
+        &:hover {
             & > .btn__carte--valid {
-                transform: scaleX(.1);
-                animation-name: btncartevalid 300ms ease-in-out;
+                background-color: red;
+                transform: translateX(45px);
+                //animation-name: btncartevalid 300ms ease-in-out;
             }
         }
         &--valid {
-            width: 0;
+            width: 50px;
             height: 100%;
             background-color: $color-third;
             transform-origin: right;
-            //transform: scaleX(.1);
-            //transition: transform 400ms ease-in-out;
+            transform: translateX(0px);
+            transition: transform 300ms ease-in-out;
         }
         &--txt {
             @include btn__txt;
