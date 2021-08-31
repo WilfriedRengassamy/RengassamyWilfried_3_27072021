@@ -31,3 +31,17 @@
     overflow: hidden;
     //height: fit-content;
 }
+
+@mixin backgrounddsp {
+    background-size: 125%;
+    background-repeat: no-repeat;
+    animation: bgopacity 500ms ease-in-out;
+}
+@keyframes bgopacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
