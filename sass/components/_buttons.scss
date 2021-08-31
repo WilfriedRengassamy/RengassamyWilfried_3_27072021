@@ -1,9 +1,16 @@
-@keyframes btncartevalid {
-    from {
-        transform: scaleX(0);
+@keyframes btncarteup {
+    0% {
+        transform: translateY(10rem);
+        opacity: 0;
     }
-    to {
-        transform: scaleX(.1);
+    45% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -33,14 +40,18 @@
         background-color: $btn__base--color;
         border-radius: 3rem;
         overflow: hidden;
+        animation: btncarteup 950ms 300ms ease-in-out;
         &:hover {
             & > .btn__carte--valid {
                 transform: translateX(0rem);
                 //animation-name: btncartevalid 300ms ease-in-out;
             }
+            & > .btn__carte--price {
+                transform: translateX(-12rem);
+            }
         }
         &--valid {
-            width: 18rem;
+            width: 10rem;
             height: 100%;
             background-color: $color-third;
             transform-origin: right;
@@ -49,6 +60,9 @@
         }
         &--txt {
             @include btn__txt;
+            overflow-x: hidden;
+            //animation: btncartetxt 300ms ease-in-out;
+            //white-space: nowrap;
             h4 {
                 margin-top: 2.5rem;
             }
@@ -60,10 +74,19 @@
         }
         &--price {
             @include btn__txt;
+            justify-self: flex-end;
+            text-align: end;
             height: 100%;
-            width: 25rem;
+            width: 6rem;
             font-weight: bolder;
             font-size: 3rem;
+            //margin: 6rem -10rem 0 0;
+            margin-right: -7rem;
+            padding-top: 6rem;
+            overflow: hidden;
+            transform-origin: left;
+            transform: translateX(0);
+            transition: transform 300ms ease-in-out;
         }
 
     }
