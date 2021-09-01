@@ -32,6 +32,14 @@
     &__base {
         @include btn_base;
         background-color: $discover-color;
+        &--ico {
+            @include ico;
+            margin-right: -5rem;
+            padding-left: 3rem;
+        }
+        &--mobile {
+            width: 2rem;
+        }
     }
     &__carte {
         @include btn_base;

@@ -75,6 +75,15 @@ a {
   width: 100%;
   height: fit-content;
 }
+#local__ico {
+  display: flex;
+  flex-wrap: wrap;
+  width: 3rem;
+  margin-right: 3rem;
+}
+#local__ico--marker {
+  width: 2rem;
+}
 #local__txt {
   font-size: 2.5rem;
   font-weight: bold;
@@ -214,6 +223,16 @@ a {
   box-shadow: 0em 0em 0.9em #c8c8c8;
   color: black;
   background-color: #f6f6f6;
+}
+.btn__base--ico {
+  display: flex;
+  flex-wrap: wrap;
+  width: 3rem;
+  margin-right: -5rem;
+  padding-left: 3rem;
+}
+.btn__base--mobile {
+  width: 2rem;
 }
 .btn__carte {
   margin: 2.5rem auto 0;
@@ -378,6 +397,12 @@ footer {
 }
 footer nav {
   text-align: left;
+}
+footer nav .nav__ico {
+  display: flex;
+  flex-wrap: wrap;
+  width: 3rem;
+  width: 2rem;
 }
 footer nav ul li {
   margin-top: 1rem;

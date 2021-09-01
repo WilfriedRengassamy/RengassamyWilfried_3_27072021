@@ -6,6 +6,12 @@
     width: 100%;
 }
 
+@mixin ico {
+    display: flex;
+    flex-wrap: wrap;
+    width: 3rem;
+}
+
 @mixin btn_base {
     margin: 2.5rem auto 0;
     padding-left: 2rem;

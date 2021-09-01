@@ -21,6 +21,13 @@
 #local {
     @include block;
     height: fit-content;
+    &__ico {
+        @include ico;
+        margin-right: 3rem;
+        &--marker {
+            width: 2rem;
+        }
+    }
     &__txt {
         font-size: 2.5rem;
         font-weight: bold;
