@@ -10,8 +10,10 @@ footer {
         .nav__ico {
             @include ico;
             width: 2rem;
+            padding-right: 1.5rem;
         }
         ul li {
+            display: flex;
             margin-top: 1rem;
             margin-bottom: 1rem;
             list-style-type: none;       
