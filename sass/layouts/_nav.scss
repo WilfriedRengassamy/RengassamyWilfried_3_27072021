@@ -7,6 +7,10 @@ footer {
     background-color: $color-footer;
     nav {
         text-align: left;
+        .nav__ico {
+            @include ico;
+            width: 2rem;
+        }
         ul li {
             margin-top: 1rem;
             margin-bottom: 1rem;
