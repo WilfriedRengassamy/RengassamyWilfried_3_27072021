@@ -403,8 +403,10 @@ footer nav .nav__ico {
   flex-wrap: wrap;
   width: 3rem;
   width: 2rem;
+  padding-right: 1.5rem;
 }
 footer nav ul li {
+  display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
   list-style-type: none;
