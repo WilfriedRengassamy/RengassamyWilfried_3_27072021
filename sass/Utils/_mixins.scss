@@ -16,7 +16,7 @@
     margin: 2.5rem auto 0;
     padding-left: 2rem;
     //margin-bottom: 4rem;
-    width: 90%;
+    width: 55rem;
     height: 12rem;
     box-shadow: 0em 0em 0.9em rgba(200, 200, 200, 30);
     color: black;
@@ -60,4 +60,12 @@
     border-radius: 3rem;
     overflow: hidden;
     animation: btncarteup 2s ease-in-out both;
+    @include btn__carte__validanim;
+}
+@mixin btn__carte__validanim {
+    &:hover {
+        & > .btn__carte--price {
+            transform: translateX(0rem);
+        }
+    }
 }

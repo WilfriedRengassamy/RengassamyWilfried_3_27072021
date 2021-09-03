@@ -58,17 +58,8 @@
             @include btn__carte;
             animation-delay: 1200ms;
         }
-
-        &:hover {
-            & > .btn__carte--valid {
-                transform: translateX(0rem);
-                //animation-name: btncartevalid 300ms ease-in-out;
-            }
-            /*& > .btn__carte--price {
-                transform: translateX(-12rem);
-            }*/
-        }
     }
+    
     &__alt {
         padding-left: $pad-alt;
         padding-right: $pad-alt; 
@@ -104,16 +95,17 @@
     display: flex;
     justify-self: flex-start;
     flex-direction: column;
-    width: auto;
     height: 100%;
     overflow: hidden;
-    //animation: btncartetxt 300ms ease-in-out;
-    //white-space: nowrap;
     h4 {
+        overflow: hidden;
+        white-space: nowrap;
         text-overflow: ellipsis;
         margin-top: 2.5rem;
     }
     p {
+        overflow: hidden;
+        white-space: nowrap;
         text-overflow: ellipsis;
         margin-top: -2.3rem;
         font-size: 2.3rem;
@@ -122,34 +114,25 @@
 }
 .btn__carte--price {
     display: flex;
-    justify-content: flex-end;
-    height: 100%;
-    width: 12rem;
-    /*@include btn__txt;
     justify-self: flex-end;
-    text-align: end;
-    font-weight: bolder;
-    font-size: 3rem;*/
-    /*margin: 6rem -10rem 0 0;
-    margin-right: -7rem;
-    padding-top: 6rem;
-    overflow: hidden;
-    transform-origin: left;
-    transform: translateX(0);
-    transition: transform 300ms ease-in-out;*/
+    flex-direction: row;
+    margin: 0 17px 0 17px;
+    width: fit-content;
+    height: 100%;
+    transform: translateX(10rem);
+    transform-origin: right;
+    transition: transform 300ms ease-in-out;
     h4 {
-        margin: 0rem 4rem 2.5rem 4rem;
+        margin: 0 4rem 2.5rem 4rem;
         align-self: flex-end;
     }
 }
+
 .btn__carte--valid {
+    margin-left: 1rem;
     width: 10rem;
     height: 100%;
-    //border-radius: 3rem 0 0 3rem;
     background-color: $color-third;
-    transform-origin: right;
-    transform: translateX(10rem);
-    transition: transform 300ms ease-in-out;
 }
 
 
