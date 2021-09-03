@@ -234,7 +234,7 @@ a {
 .btn__base--mobile {
   width: 2rem;
 }
-.btn__carte {
+.btn__carte--1 {
   margin: 2.5rem auto 0;
   padding-left: 2rem;
   width: 90%;
@@ -246,54 +246,61 @@ a {
   background-color: white;
   border-radius: 3rem;
   overflow: hidden;
-  animation: btncarteup 950ms 300ms ease-in-out;
+  animation: btncarteup 2s ease-in-out both;
+  animation-delay: 100ms;
+}
+.btn__carte--2 {
+  margin: 2.5rem auto 0;
+  padding-left: 2rem;
+  width: 90%;
+  height: 12rem;
+  box-shadow: 0em 0em 0.9em #c8c8c8;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 3rem;
+  overflow: hidden;
+  animation: btncarteup 2s ease-in-out both;
+  animation-delay: 400ms;
+}
+.btn__carte--3 {
+  margin: 2.5rem auto 0;
+  padding-left: 2rem;
+  width: 90%;
+  height: 12rem;
+  box-shadow: 0em 0em 0.9em #c8c8c8;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 3rem;
+  overflow: hidden;
+  animation: btncarteup 2s ease-in-out both;
+  animation-delay: 700ms;
+}
+.btn__carte--4 {
+  margin: 2.5rem auto 0;
+  padding-left: 2rem;
+  width: 90%;
+  height: 12rem;
+  box-shadow: 0em 0em 0.9em #c8c8c8;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 3rem;
+  overflow: hidden;
+  animation: btncarteup 2s ease-in-out both;
+  animation-delay: 1200ms;
+}
+.btn__carte:hover {
+  /*& > .btn__carte--price {
+      transform: translateX(-12rem);
+  }*/
 }
 .btn__carte:hover > .btn__carte--valid {
   transform: translateX(0rem);
-}
-.btn__carte:hover > .btn__carte--price {
-  transform: translateX(-12rem);
-}
-.btn__carte--valid {
-  width: 10rem;
-  height: 100%;
-  background-color: #99E2D0;
-  transform-origin: right;
-  transform: translateX(20rem);
-  transition: transform 300ms ease-in-out;
-}
-.btn__carte--txt {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  overflow: hidden;
-  overflow-x: hidden;
-}
-.btn__carte--txt h4 {
-  margin-top: 2.5rem;
-}
-.btn__carte--txt p {
-  margin-top: -2.3rem;
-  font-size: 2.3rem;
-  font-size: 500;
-}
-.btn__carte--price {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  overflow: hidden;
-  justify-self: flex-end;
-  text-align: end;
-  height: 100%;
-  width: 6rem;
-  font-weight: bolder;
-  font-size: 3rem;
-  margin-right: -7rem;
-  padding-top: 6rem;
-  overflow: hidden;
-  transform-origin: left;
-  transform: translateX(0);
-  transition: transform 300ms ease-in-out;
 }
 .btn__alt {
   padding-left: 3.4rem;
@@ -330,6 +337,57 @@ a {
   width: 95%;
   overflow: hidden;
   padding-top: 0.3rem;
+}
+
+.btn__carte--txt {
+  display: flex;
+  justify-self: flex-start;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+.btn__carte--txt h4 {
+  text-overflow: ellipsis;
+  margin-top: 2.5rem;
+}
+.btn__carte--txt p {
+  text-overflow: ellipsis;
+  margin-top: -2.3rem;
+  font-size: 2.3rem;
+  font-size: 500;
+}
+
+.btn__carte--price {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  width: 12rem;
+  /*@include btn__txt;
+  justify-self: flex-end;
+  text-align: end;
+  font-weight: bolder;
+  font-size: 3rem;*/
+  /*margin: 6rem -10rem 0 0;
+  margin-right: -7rem;
+  padding-top: 6rem;
+  overflow: hidden;
+  transform-origin: left;
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;*/
+}
+.btn__carte--price h4 {
+  margin: 0rem 4rem 2.5rem 4rem;
+  align-self: flex-end;
+}
+
+.btn__carte--valid {
+  width: 10rem;
+  height: 100%;
+  background-color: #99E2D0;
+  transform-origin: right;
+  transform: translateX(10rem);
+  transition: transform 300ms ease-in-out;
 }
 
 .tile {
