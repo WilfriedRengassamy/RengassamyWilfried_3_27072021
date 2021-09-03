@@ -218,7 +218,7 @@ a {
 .btn__base {
   margin: 2.5rem auto 0;
   padding-left: 2rem;
-  width: 90%;
+  width: 55rem;
   height: 12rem;
   box-shadow: 0em 0em 0.9em #c8c8c8;
   color: black;
@@ -237,7 +237,7 @@ a {
 .btn__carte--1 {
   margin: 2.5rem auto 0;
   padding-left: 2rem;
-  width: 90%;
+  width: 55rem;
   height: 12rem;
   box-shadow: 0em 0em 0.9em #c8c8c8;
   color: black;
@@ -249,10 +249,13 @@ a {
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 100ms;
 }
+.btn__carte--1:hover > .btn__carte--price {
+  transform: translateX(0rem);
+}
 .btn__carte--2 {
   margin: 2.5rem auto 0;
   padding-left: 2rem;
-  width: 90%;
+  width: 55rem;
   height: 12rem;
   box-shadow: 0em 0em 0.9em #c8c8c8;
   color: black;
@@ -264,10 +267,13 @@ a {
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 400ms;
 }
+.btn__carte--2:hover > .btn__carte--price {
+  transform: translateX(0rem);
+}
 .btn__carte--3 {
   margin: 2.5rem auto 0;
   padding-left: 2rem;
-  width: 90%;
+  width: 55rem;
   height: 12rem;
   box-shadow: 0em 0em 0.9em #c8c8c8;
   color: black;
@@ -279,10 +285,13 @@ a {
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 700ms;
 }
+.btn__carte--3:hover > .btn__carte--price {
+  transform: translateX(0rem);
+}
 .btn__carte--4 {
   margin: 2.5rem auto 0;
   padding-left: 2rem;
-  width: 90%;
+  width: 55rem;
   height: 12rem;
   box-shadow: 0em 0em 0.9em #c8c8c8;
   color: black;
@@ -294,12 +303,7 @@ a {
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 1200ms;
 }
-.btn__carte:hover {
-  /*& > .btn__carte--price {
-      transform: translateX(-12rem);
-  }*/
-}
-.btn__carte:hover > .btn__carte--valid {
+.btn__carte--4:hover > .btn__carte--price {
   transform: translateX(0rem);
 }
 .btn__alt {
@@ -343,15 +347,18 @@ a {
   display: flex;
   justify-self: flex-start;
   flex-direction: column;
-  width: auto;
   height: 100%;
   overflow: hidden;
 }
 .btn__carte--txt h4 {
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
   margin-top: 2.5rem;
 }
 .btn__carte--txt p {
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
   margin-top: -2.3rem;
   font-size: 2.3rem;
@@ -360,34 +367,25 @@ a {
 
 .btn__carte--price {
   display: flex;
-  justify-content: flex-end;
-  height: 100%;
-  width: 12rem;
-  /*@include btn__txt;
   justify-self: flex-end;
-  text-align: end;
-  font-weight: bolder;
-  font-size: 3rem;*/
-  /*margin: 6rem -10rem 0 0;
-  margin-right: -7rem;
-  padding-top: 6rem;
-  overflow: hidden;
-  transform-origin: left;
-  transform: translateX(0);
-  transition: transform 300ms ease-in-out;*/
+  flex-direction: row;
+  margin: 0 17px 0 17px;
+  width: fit-content;
+  height: 100%;
+  transform: translateX(10rem);
+  transform-origin: right;
+  transition: transform 300ms ease-in-out;
 }
 .btn__carte--price h4 {
-  margin: 0rem 4rem 2.5rem 4rem;
+  margin: 0 4rem 2.5rem 4rem;
   align-self: flex-end;
 }
 
 .btn__carte--valid {
+  margin-left: 1rem;
   width: 10rem;
   height: 100%;
   background-color: #99E2D0;
-  transform-origin: right;
-  transform: translateX(10rem);
-  transition: transform 300ms ease-in-out;
 }
 
 .tile {
