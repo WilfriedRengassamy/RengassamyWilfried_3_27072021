@@ -51,3 +51,13 @@
         opacity: 1;
     }
 }
+
+@mixin btn__carte {
+    @include btn_base;
+    display: flex;
+    flex-direction: row;
+    background-color: $btn__base--color;
+    border-radius: 3rem;
+    overflow: hidden;
+    animation: btncarteup 2s ease-in-out both;
+}

@@ -42,65 +42,36 @@
         }
     }
     &__carte {
-        @include btn_base;
-        display: flex;
-        flex-direction: row;
-        background-color: $btn__base--color;
-        border-radius: 3rem;
-        overflow: hidden;
-        animation: btncarteup 950ms 300ms ease-in-out;
+        &--1 {
+            @include btn__carte;
+            animation-delay: 100ms;
+        }
+        &--2 {
+            @include btn__carte;
+            animation-delay: 400ms;
+        }
+        &--3 {
+            @include btn__carte;
+            animation-delay: 700ms;
+        }
+        &--4 {
+            @include btn__carte;
+            animation-delay: 1200ms;
+        }
+
         &:hover {
             & > .btn__carte--valid {
                 transform: translateX(0rem);
                 //animation-name: btncartevalid 300ms ease-in-out;
             }
-            & > .btn__carte--price {
+            /*& > .btn__carte--price {
                 transform: translateX(-12rem);
-            }
+            }*/
         }
-        &--valid {
-            width: 10rem;
-            height: 100%;
-            background-color: $color-third;
-            transform-origin: right;
-            transform: translateX(20rem);
-            transition: transform 300ms ease-in-out;
-        }
-        &--txt {
-            @include btn__txt;
-            overflow-x: hidden;
-            //animation: btncartetxt 300ms ease-in-out;
-            //white-space: nowrap;
-            h4 {
-                margin-top: 2.5rem;
-            }
-            p {
-                margin-top: -2.3rem;
-                font-size: 2.3rem;
-                font-size: 500;
-            }
-        }
-        &--price {
-            @include btn__txt;
-            justify-self: flex-end;
-            text-align: end;
-            height: 100%;
-            width: 6rem;
-            font-weight: bolder;
-            font-size: 3rem;
-            //margin: 6rem -10rem 0 0;
-            margin-right: -7rem;
-            padding-top: 6rem;
-            overflow: hidden;
-            transform-origin: left;
-            transform: translateX(0);
-            transition: transform 300ms ease-in-out;
-        }
-
     }
     &__alt {
-        padding-left: 3.4rem;
-        padding-right: 3.4rem; 
+        padding-left: $pad-alt;
+        padding-right: $pad-alt; 
         width: fit-content;
         height: 8.2rem;
         background: linear-gradient(-369deg, $color-primary, $color-secondary) ;
@@ -129,6 +100,58 @@
         }
     }
 }
+.btn__carte--txt {
+    display: flex;
+    justify-self: flex-start;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    //animation: btncartetxt 300ms ease-in-out;
+    //white-space: nowrap;
+    h4 {
+        text-overflow: ellipsis;
+        margin-top: 2.5rem;
+    }
+    p {
+        text-overflow: ellipsis;
+        margin-top: -2.3rem;
+        font-size: 2.3rem;
+        font-size: 500;
+    }
+}
+.btn__carte--price {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 12rem;
+    /*@include btn__txt;
+    justify-self: flex-end;
+    text-align: end;
+    font-weight: bolder;
+    font-size: 3rem;*/
+    /*margin: 6rem -10rem 0 0;
+    margin-right: -7rem;
+    padding-top: 6rem;
+    overflow: hidden;
+    transform-origin: left;
+    transform: translateX(0);
+    transition: transform 300ms ease-in-out;*/
+    h4 {
+        margin: 0rem 4rem 2.5rem 4rem;
+        align-self: flex-end;
+    }
+}
+.btn__carte--valid {
+    width: 10rem;
+    height: 100%;
+    //border-radius: 3rem 0 0 3rem;
+    background-color: $color-third;
+    transform-origin: right;
+    transform: translateX(10rem);
+    transition: transform 300ms ease-in-out;
+}
+
 
 .tile {
     @include block;
