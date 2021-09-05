@@ -95,21 +95,23 @@
     display: flex;
     justify-self: flex-start;
     flex-direction: column;
+    flex: auto;
     height: 100%;
     overflow: hidden;
     h4 {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        flex: auto;
         margin-top: 2.5rem;
     }
     p {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        flex: auto;
         margin-top: -2.3rem;
         font-size: 2.3rem;
-        font-size: 500;
     }
 }
 .btn__carte--price {
@@ -119,11 +121,11 @@
     margin: 0 17px 0 17px;
     width: fit-content;
     height: 100%;
-    transform: translateX(10rem);
+    transform: translateX(11.1rem);
     transform-origin: right;
     transition: transform 300ms ease-in-out;
     h4 {
-        margin: 0 4rem 2.5rem 4rem;
+        margin: 0 0 2.5rem 0rem;
         align-self: flex-end;
     }
 }
