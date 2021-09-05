@@ -250,7 +250,7 @@ a {
   animation-delay: 100ms;
 }
 .btn__carte--1:hover > .btn__carte--price {
-  transform: translateX(0rem);
+  transform: translateX(2rem);
 }
 .btn__carte--2 {
   margin: 2.5rem auto 0;
@@ -268,7 +268,7 @@ a {
   animation-delay: 400ms;
 }
 .btn__carte--2:hover > .btn__carte--price {
-  transform: translateX(0rem);
+  transform: translateX(2rem);
 }
 .btn__carte--3 {
   margin: 2.5rem auto 0;
@@ -286,7 +286,7 @@ a {
   animation-delay: 700ms;
 }
 .btn__carte--3:hover > .btn__carte--price {
-  transform: translateX(0rem);
+  transform: translateX(2rem);
 }
 .btn__carte--4 {
   margin: 2.5rem auto 0;
@@ -304,7 +304,7 @@ a {
   animation-delay: 1200ms;
 }
 .btn__carte--4:hover > .btn__carte--price {
-  transform: translateX(0rem);
+  transform: translateX(2rem);
 }
 .btn__alt {
   padding-left: 3.4rem;
@@ -347,6 +347,7 @@ a {
   display: flex;
   justify-self: flex-start;
   flex-direction: column;
+  flex: auto;
   height: 100%;
   overflow: hidden;
 }
@@ -354,15 +355,16 @@ a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  flex: auto;
   margin-top: 2.5rem;
 }
 .btn__carte--txt p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  flex: auto;
   margin-top: -2.3rem;
   font-size: 2.3rem;
-  font-size: 500;
 }
 
 .btn__carte--price {
@@ -372,12 +374,12 @@ a {
   margin: 0 17px 0 17px;
   width: fit-content;
   height: 100%;
-  transform: translateX(10rem);
+  transform: translateX(11.1rem);
   transform-origin: right;
   transition: transform 300ms ease-in-out;
 }
 .btn__carte--price h4 {
-  margin: 0 4rem 2.5rem 4rem;
+  margin: 0 0 2.5rem 0rem;
   align-self: flex-end;
 }
 
