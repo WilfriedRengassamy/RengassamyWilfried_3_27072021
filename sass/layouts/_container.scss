@@ -1,4 +1,5 @@
 .container {
+    animation: index 1000ms $index__del both;
     @include block;
     &__resto1 {
         background-image: url(../pics/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -16,6 +17,58 @@
         background-image: url(../pics/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
         @include backgrounddsp;
     }
+}
+
+@keyframes load_ext {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(-360deg);
+    }
+}
+@keyframes load_int {
+    0% {
+        transform:rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+@keyframes index {
+    0% {
+        transform: translateX(-9999px);
+        opacity: 0;
+    }  
+    1% {
+        transform: translateX(0);
+        opacity: 0;
+    }  
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    height: 50%;
+    &__ring--ext {
+        height: 75%;
+        animation: load_ext $load__ring--anim;
+    }
+    &__ring--int {
+        height: 50%;
+        animation: load_int $load__ring--anim;
+    }
+}
+
+.header__backpage {
+    width: 4.5rem;
+    margin-left: -23rem;
 }
 
 #local {
