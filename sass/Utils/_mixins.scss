@@ -77,3 +77,11 @@
         }
     }
 }
+
+@mixin bloc_txt {
+    display: flex;
+    justify-self: flex-start;
+    flex-direction: column;
+    flex: auto;
+    overflow: hidden;
+}

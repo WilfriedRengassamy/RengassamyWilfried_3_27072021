@@ -36,6 +36,7 @@ a {
 }
 
 .container {
+  animation: index 1000ms 1300ms both;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -65,6 +66,57 @@ a {
   background-size: 125%;
   background-repeat: no-repeat;
   animation: bgopacity 500ms ease-in-out;
+}
+
+@keyframes load_ext {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-360deg);
+  }
+}
+@keyframes load_int {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes index {
+  0% {
+    transform: translateX(-9999px);
+    opacity: 0;
+  }
+  1% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  height: 50%;
+}
+.loader__ring--ext {
+  height: 75%;
+  animation: load_ext 1000ms 150ms linear both infinite;
+}
+.loader__ring--int {
+  height: 50%;
+  animation: load_int 1000ms 150ms linear both infinite;
+}
+
+.header__backpage {
+  width: 4.5rem;
+  margin-left: -23rem;
 }
 
 #local {
@@ -348,8 +400,8 @@ a {
   justify-self: flex-start;
   flex-direction: column;
   flex: auto;
-  height: 100%;
   overflow: hidden;
+  height: 100%;
 }
 .btn__carte--txt h4 {
   overflow: hidden;
@@ -411,19 +463,29 @@ a {
   height: 72%;
   background-position-y: 0px;
 }
-.tile__info {
+
+.btn__tile--info {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0%;
-  width: 100%;
+  justify-self: flex-start;
   flex-direction: column;
-  padding-left: 0.5em;
-  margin-top: -4px;
+  flex: auto;
+  overflow: hidden;
+  margin: 0 1.5rem 0 1.5rem;
 }
-.tile__info p {
-  margin-top: -10px;
-  font-size: 0.8em;
+.btn__tile--info h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: auto;
+  margin-top: 2.5rem;
+}
+.btn__tile--info p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: auto;
+  margin-top: -2.3rem;
+  font-size: 2.3rem;
 }
 
 header {
