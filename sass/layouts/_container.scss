@@ -21,7 +21,7 @@
 
 @keyframes load_ext {
     0% {
-        transform: rotateZ(0deg);
+        transform: rotate(0deg);
     }
     100% {
         transform: rotateZ(-360deg);
@@ -29,7 +29,7 @@
 }
 @keyframes load_int {
     0% {
-        transform:rotateZ(0deg);
+        transform:rotate(0deg);
     }
     100% {
         transform: rotateZ(360deg);
@@ -55,24 +55,24 @@
     //z-index: 1;
     justify-self: center;
     align-content: center;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     &__ring--ext {
         //z-index: 1;
-        position: absolute;
+        position: relative;
         //margin-top: 30rem;
-        width: 200px;
-        height: 200px;
-        left: calc(50% - 100px);
-        top: calc(50% - 100px);
+        width: 30rem;
+        height: 30rem;
+        left: calc(50% - 15rem);
+        top: calc(50% - 10rem);
         animation: load_ext $load__ring--anim;
     }
     &__ring--int {
         //z-index: 1;
-        position: absolute;
-        width: 180px;
-        left: calc(50% - 90px);
-        top: calc(50% - 90px);
+        position: relative;
+        width: 25rem;
+        left: calc(50% - 12.5rem);
+        top: calc(50% - 38rem);
         //margin-top: -10rem;
         animation: load_int $load__ring--anim;
     }
