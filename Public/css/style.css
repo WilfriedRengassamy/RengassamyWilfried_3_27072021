@@ -70,18 +70,18 @@ a {
 
 @keyframes load_ext {
   0% {
-    transform: rotateX(0deg);
+    transform: rotateZ(0deg);
   }
   100% {
-    transform: rotateX(-360deg);
+    transform: rotateZ(-360deg);
   }
 }
 @keyframes load_int {
   0% {
-    transform: rotateX(0deg);
+    transform: rotateZ(0deg);
   }
   100% {
-    transform: rotateX(360deg);
+    transform: rotateZ(360deg);
   }
 }
 @keyframes index {
@@ -99,18 +99,25 @@ a {
   }
 }
 .loader {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  justify-self: center;
   align-content: center;
   width: 50%;
   height: 50%;
 }
 .loader__ring--ext {
-  height: 75%;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
   animation: load_ext 1000ms 150ms linear both infinite;
 }
 .loader__ring--int {
-  height: 50%;
+  position: absolute;
+  width: 180px;
+  left: calc(50% - 90px);
+  top: calc(50% - 90px);
   animation: load_int 1000ms 150ms linear both infinite;
 }
 
@@ -301,8 +308,8 @@ a {
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 100ms;
 }
-.btn__carte--1:hover > .btn__carte--price {
-  transform: translateX(2rem);
+.btn__carte--1:hover > .btn__carte--valid {
+  transform: translateX(-10rem);
 }
 .btn__carte--2 {
   margin: 2.5rem auto 0;
@@ -319,8 +326,8 @@ a {
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 400ms;
 }
-.btn__carte--2:hover > .btn__carte--price {
-  transform: translateX(2rem);
+.btn__carte--2:hover > .btn__carte--valid {
+  transform: translateX(-10rem);
 }
 .btn__carte--3 {
   margin: 2.5rem auto 0;
@@ -337,8 +344,8 @@ a {
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 700ms;
 }
-.btn__carte--3:hover > .btn__carte--price {
-  transform: translateX(2rem);
+.btn__carte--3:hover > .btn__carte--valid {
+  transform: translateX(-10rem);
 }
 .btn__carte--4 {
   margin: 2.5rem auto 0;
@@ -355,8 +362,8 @@ a {
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 1200ms;
 }
-.btn__carte--4:hover > .btn__carte--price {
-  transform: translateX(2rem);
+.btn__carte--4:hover > .btn__carte--valid {
+  transform: translateX(-10rem);
 }
 .btn__alt {
   padding-left: 3.4rem;
@@ -436,10 +443,12 @@ a {
 }
 
 .btn__carte--valid {
+  position: absolute;
   margin-left: 1rem;
   width: 10rem;
   height: 100%;
   background-color: #99E2D0;
+  right: calc(50% - 39rem);
 }
 
 .tile {

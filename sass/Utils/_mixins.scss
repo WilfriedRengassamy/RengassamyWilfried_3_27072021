@@ -72,8 +72,8 @@
 
 @mixin btn__carte__validanim {
     &:hover {
-        & > .btn__carte--price {
-            transform: translateX(2rem);
+        & > .btn__carte--valid {
+            transform: translateX(-10rem);
         }
     }
 }
