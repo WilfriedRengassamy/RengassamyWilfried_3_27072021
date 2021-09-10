@@ -21,18 +21,18 @@
 
 @keyframes load_ext {
     0% {
-        transform: rotateX(0deg);
+        transform: rotateZ(0deg);
     }
     100% {
-        transform: rotateX(-360deg);
+        transform: rotateZ(-360deg);
     }
 }
 @keyframes load_int {
     0% {
-        transform:rotateX(0deg);
+        transform:rotateZ(0deg);
     }
     100% {
-        transform: rotateX(360deg);
+        transform: rotateZ(360deg);
     }
 }
 @keyframes index {
@@ -51,17 +51,29 @@
 }
 
 .loader {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    //z-index: 1;
+    justify-self: center;
     align-content: center;
     width: 50%;
     height: 50%;
     &__ring--ext {
-        height: 75%;
+        //z-index: 1;
+        position: absolute;
+        //margin-top: 30rem;
+        width: 200px;
+        height: 200px;
+        left: calc(50% - 100px);
+        top: calc(50% - 100px);
         animation: load_ext $load__ring--anim;
     }
     &__ring--int {
-        height: 50%;
+        //z-index: 1;
+        position: absolute;
+        width: 180px;
+        left: calc(50% - 90px);
+        top: calc(50% - 90px);
+        //margin-top: -10rem;
         animation: load_int $load__ring--anim;
     }
 }

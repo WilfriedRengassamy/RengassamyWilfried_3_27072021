@@ -121,10 +121,12 @@
 }
 
 .btn__carte--valid {
+    position: absolute;
     margin-left: 1rem;
     width: 10rem;
     height: 100%;
     background-color: $color-third;
+    right: calc(50% - 39rem);
 }
 
 
