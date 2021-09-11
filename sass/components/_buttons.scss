@@ -107,15 +107,14 @@
 .btn__carte--price {
     display: flex;
     justify-self: flex-end;
-    flex-direction: row;
-    margin: 0 17px 0 17px;
+    //margin: 0 17px 0 17px;
     width: fit-content;
     height: 100%;
     transform: translateX(11.1rem);
     transform-origin: right;
     transition: transform 300ms ease-in-out;
     h4 {
-        margin: 0 0 2.5rem 0rem;
+        //margin: 0 0 2.5rem 0rem;
         align-self: flex-end;
     }
 }
@@ -127,6 +126,18 @@
     height: 100%;
     background-color: $color-third;
     right: calc(50% - 39rem);
+    transform: translateX(11.1rem);
+    transform-origin: right;
+    transition: transform 500ms ease-in-out;
+    .valid {
+        position: absolute;
+        left: calc(50% - 2rem);
+        top: calc(50% - 2rem);    
+        width: 3.5rem;
+        height: 3.5rem;
+        transform: rotateZ(-225deg);
+        transition: transform 300ms 300ms ease-in-out;
+    }
 }
 
 
