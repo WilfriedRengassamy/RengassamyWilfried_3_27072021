@@ -74,6 +74,9 @@
     &:hover {
         & > .btn__carte--valid {
             transform: translateX(-10rem);
+            .valid {
+                transform: rotateZ(-360deg);
+            }
         }
     }
 }
