@@ -56,6 +56,7 @@
     @include btn_base;
     display: flex;
     flex-direction: row;
+    //justify-content: space-between;
     background-color: $btn__base--color;
     border-radius: 3rem;
     overflow: hidden;
@@ -72,7 +73,7 @@
 
 @mixin btn__carte__validanim {
     &:hover {
-        & > .btn__carte--valid {
+        & > .btn__carte--valid, .btn__carte--price {
             transform: translateX(-10rem);
             .valid {
                 transform: rotateZ(-360deg);
