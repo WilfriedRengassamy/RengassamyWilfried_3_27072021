@@ -60,6 +60,10 @@
     @include btn__carte--validanim;
 }
 
+@keyframes carte__txt--size {
+    0% {width: 100%;}
+    100% {width: 80;}
+}
 @mixin btn__carte--txt {
     overflow: hidden;
     white-space: nowrap;
@@ -73,6 +77,12 @@
             transform: translateX(-10rem);
             .valid {
                 transform: rotateZ(-360deg);
+            }
+        }
+        & > .btn__carte--txt {
+            animation: carte__txt--size 500ms ease-in-out both;
+            h4, p {
+                animation: carte__txt--size 500ms ease-in-out both;
             }
         }
     }
