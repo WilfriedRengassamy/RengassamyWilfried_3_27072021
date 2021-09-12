@@ -104,10 +104,10 @@
         }
     }
 }
-
 .btn__carte--txt {
     @include bloc_txt;
     height: 100%;
+    transform-origin: left;
     h4 {
         @include btn__carte--txt;
         margin-top: 2.5rem;

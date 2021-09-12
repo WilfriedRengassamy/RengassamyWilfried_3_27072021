@@ -13,9 +13,18 @@ body {
     opacity: 1;
   }
 }
+@keyframes carte__txt--size {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 80;
+  }
+}
 body {
   font-family: "Roboto";
   font-size: 2.6rem;
+  text-decoration: none;
 }
 
 h1 {
@@ -25,10 +34,20 @@ h1 {
 h2 {
   font-size: 4rem;
   font-weight: 900;
+  text-decoration: none;
+}
+
+h3 {
+  text-decoration: none;
+}
+
+h4 {
+  text-decoration: none;
 }
 
 p {
   font-weight: 200;
+  text-decoration: none;
 }
 
 a {
@@ -68,20 +87,12 @@ a {
   animation: bgopacity 500ms ease-in-out;
 }
 
-@keyframes load_ext {
+@keyframes load_anim {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotateZ(-360deg);
-  }
-}
-@keyframes load_int {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotateZ(360deg);
   }
 }
 @keyframes index {
@@ -127,14 +138,15 @@ a {
   height: 30rem;
   left: calc(50% - 15rem);
   top: calc(50% - 10rem);
-  animation: load_ext 1250ms 150ms linear both infinite;
+  animation: load_anim 1250ms 150ms linear both infinite;
 }
 .loader__ring--int {
   position: relative;
   width: 25rem;
   left: calc(50% - 12.5rem);
   top: calc(50% - 38rem);
-  animation: load_int 1250ms 150ms linear both infinite;
+  animation: load_anim 1250ms 150ms linear both infinite;
+  animation-direction: reverse;
 }
 
 .header__backpage {
@@ -342,6 +354,12 @@ a {
 .btn__carte--1:hover > .btn__carte--valid .valid, .btn__carte--1:hover .btn__carte--price .valid {
   transform: rotateZ(-360deg);
 }
+.btn__carte--1:hover > .btn__carte--txt {
+  animation: carte__txt--size 500ms ease-in-out both;
+}
+.btn__carte--1:hover > .btn__carte--txt h4, .btn__carte--1:hover > .btn__carte--txt p {
+  animation: carte__txt--size 500ms ease-in-out both;
+}
 .btn__carte--2 {
   margin: 2.5rem auto 0;
   padding-left: 2rem;
@@ -362,6 +380,12 @@ a {
 }
 .btn__carte--2:hover > .btn__carte--valid .valid, .btn__carte--2:hover .btn__carte--price .valid {
   transform: rotateZ(-360deg);
+}
+.btn__carte--2:hover > .btn__carte--txt {
+  animation: carte__txt--size 500ms ease-in-out both;
+}
+.btn__carte--2:hover > .btn__carte--txt h4, .btn__carte--2:hover > .btn__carte--txt p {
+  animation: carte__txt--size 500ms ease-in-out both;
 }
 .btn__carte--3 {
   margin: 2.5rem auto 0;
@@ -384,6 +408,12 @@ a {
 .btn__carte--3:hover > .btn__carte--valid .valid, .btn__carte--3:hover .btn__carte--price .valid {
   transform: rotateZ(-360deg);
 }
+.btn__carte--3:hover > .btn__carte--txt {
+  animation: carte__txt--size 500ms ease-in-out both;
+}
+.btn__carte--3:hover > .btn__carte--txt h4, .btn__carte--3:hover > .btn__carte--txt p {
+  animation: carte__txt--size 500ms ease-in-out both;
+}
 .btn__carte--4 {
   margin: 2.5rem auto 0;
   padding-left: 2rem;
@@ -404,6 +434,12 @@ a {
 }
 .btn__carte--4:hover > .btn__carte--valid .valid, .btn__carte--4:hover .btn__carte--price .valid {
   transform: rotateZ(-360deg);
+}
+.btn__carte--4:hover > .btn__carte--txt {
+  animation: carte__txt--size 500ms ease-in-out both;
+}
+.btn__carte--4:hover > .btn__carte--txt h4, .btn__carte--4:hover > .btn__carte--txt p {
+  animation: carte__txt--size 500ms ease-in-out both;
 }
 .btn__alt {
   padding-left: 3.4rem;
@@ -449,6 +485,7 @@ a {
   flex: auto;
   overflow: hidden;
   height: 100%;
+  transform-origin: left;
 }
 .btn__carte--txt h4 {
   overflow: hidden;

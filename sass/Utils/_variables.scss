@@ -10,3 +10,4 @@ $load__turn--dur: 1250ms;
 $load__turn--del: 150ms;
 $index__del: $load__turn--dur + $load__turn--del*2;
 $load__ring--anim: $load__turn--dur $load__turn--del linear both infinite;
+$load__anim--setting: load_anim $load__ring--anim;

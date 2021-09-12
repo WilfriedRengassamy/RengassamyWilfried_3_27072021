@@ -19,7 +19,7 @@
     }
 }
 
-@keyframes load_ext {
+@keyframes load_anim {
     0% {
         transform: rotate(0deg);
     }
@@ -27,14 +27,7 @@
         transform: rotateZ(-360deg);
     }
 }
-@keyframes load_int {
-    0% {
-        transform:rotate(0deg);
-    }
-    100% {
-        transform: rotateZ(360deg);
-    }
-}
+
 @keyframes index {
     0% {
         transform: translateX(-9999px);
@@ -78,14 +71,15 @@
         height: 30rem;
         left: calc(50% - 15rem);
         top: calc(50% - 10rem);
-        animation: load_ext $load__ring--anim;
+        animation: $load__anim--setting;
     }
     &__ring--int {
         position: relative;
         width: 25rem;
         left: calc(50% - 12.5rem);
         top: calc(50% - 38rem);
-        animation: load_int $load__ring--anim;
+        animation: $load__anim--setting;
+        animation-direction: reverse;
     }
 }
 
