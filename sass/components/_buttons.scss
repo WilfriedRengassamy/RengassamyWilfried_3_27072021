@@ -105,12 +105,6 @@
     }
 }
 
-.btn__carte--plat {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .btn__carte--txt {
     @include bloc_txt;
     height: 100%;
@@ -126,7 +120,6 @@
 }
 .btn__carte--price {
     display: flex;
-    //justify-self: flex-end;
     justify-content: flex-end;
     margin: 1rem 1rem 0 0;
     width: 8rem;
@@ -135,7 +128,6 @@
     transform-origin: right;
     transition: transform 500ms ease-in-out;
     h4 {
-        //margin: 0 0 2.5rem 0rem;
         align-self: flex-end;
     }
 }
