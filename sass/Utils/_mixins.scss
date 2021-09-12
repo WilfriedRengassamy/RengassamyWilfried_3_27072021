@@ -15,7 +15,6 @@
 @mixin btn_base {
     margin: 2.5rem auto 0;
     padding-left: 2rem;
-    //margin-bottom: 4rem;
     width: 55rem;
     height: 12rem;
     box-shadow: 0em 0em 0.9em rgba(200, 200, 200, 30);
@@ -32,10 +31,8 @@
 @mixin btn__txt {
     display: flex;
     flex-direction: column;
-    //justify-content: space-between;
     width: 95%;
     overflow: hidden;
-    //height: fit-content;
 }
 
 @mixin backgrounddsp {
@@ -56,7 +53,6 @@
     @include btn_base;
     display: flex;
     flex-direction: row;
-    //justify-content: space-between;
     background-color: $btn__base--color;
     border-radius: 3rem;
     overflow: hidden;

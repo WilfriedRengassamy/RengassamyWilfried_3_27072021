@@ -36,7 +36,7 @@ a {
 }
 
 .container {
-  animation: index 1000ms 2600ms both;
+  animation: index 1000ms 1550ms both;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -98,12 +98,28 @@ a {
     opacity: 1;
   }
 }
+@keyframes fadeload {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .loader {
   position: absolute;
+  z-index: 1;
   justify-self: center;
   align-content: center;
   width: 100%;
   height: 100%;
+  animation: fadeload 1500ms ease-in-out both;
 }
 .loader__ring--ext {
   position: relative;
@@ -111,14 +127,14 @@ a {
   height: 30rem;
   left: calc(50% - 15rem);
   top: calc(50% - 10rem);
-  animation: load_ext 2000ms 300ms linear both infinite;
+  animation: load_ext 1250ms 150ms linear both infinite;
 }
 .loader__ring--int {
   position: relative;
   width: 25rem;
   left: calc(50% - 12.5rem);
   top: calc(50% - 38rem);
-  animation: load_int 2000ms 300ms linear both infinite;
+  animation: load_int 1250ms 150ms linear both infinite;
 }
 
 .header__backpage {
@@ -424,12 +440,6 @@ a {
   width: 95%;
   overflow: hidden;
   padding-top: 0.3rem;
-}
-
-.btn__carte--plat {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .btn__carte--txt {
