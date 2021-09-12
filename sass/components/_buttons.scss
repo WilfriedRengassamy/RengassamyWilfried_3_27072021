@@ -14,6 +14,15 @@
     }
 }
 
+@keyframes btn__base--bgcolor {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%
+    }
+}
+
 .btn {
     @include block;
     height: 3rem;
@@ -32,6 +41,10 @@
     &__base {
         @include btn_base;
         background-color: $discover-color;
+        animation: btn__base--bgcolor 300ms ease-in-out both;
+        &:hover {
+            background-color: lighten($color: $color-primary, $amount: 35)
+        }
         &--ico {
             @include ico;
             margin-right: -5rem;
@@ -91,6 +104,13 @@
         }
     }
 }
+
+.btn__carte--plat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .btn__carte--txt {
     @include bloc_txt;
     height: 100%;
@@ -106,13 +126,14 @@
 }
 .btn__carte--price {
     display: flex;
-    justify-self: flex-end;
-    //margin: 0 17px 0 17px;
-    width: fit-content;
+    //justify-self: flex-end;
+    justify-content: flex-end;
+    margin: 1rem 1rem 0 0;
+    width: 8rem;
     height: 100%;
-    transform: translateX(11.1rem);
+    transform: translateX(-1.9rem);
     transform-origin: right;
-    transition: transform 300ms ease-in-out;
+    transition: transform 500ms ease-in-out;
     h4 {
         //margin: 0 0 2.5rem 0rem;
         align-self: flex-end;
@@ -140,7 +161,6 @@
     }
 }
 
-
 .tile {
     @include block;
     margin: auto;
@@ -150,12 +170,37 @@
 	height: 15em;
 	border-radius: 1.2em;
 	box-shadow: 0em 0em 0.9em rgba(200, 200, 200, 30);
+    &__new {
+        position: relative;
+        text-align:center;
+        right: calc(0% - 17rem);
+        top: calc(7% - 0rem);
+        width: 16rem;
+        height: 6rem;
+        border-radius: .5rem;
+        background-color: $color-third;
+        color: darken($color: $color-third, $amount: 35);
+        h4 {
+            margin: 1.5rem auto auto auto;
+        }
+    }
     &__pic {
         background-size: cover;
+        margin-top: -6rem;
         border-radius: 1em 1em 0em 0em;
         width: 100%;
         height: 72%;
         background-position-y: 0px;
+    }
+    &__heart {
+        background-image: url(../pics/icons/heart-outline.svg);
+        width: 4rem;
+        height: 4rem;
+        margin: 3rem 5rem 0 0;
+        animation: bgopacity 300ms ease-in-out;
+    }
+    &:hover > .tile__heart {
+        animation: bgopacity 300ms ease-in-out;
     }
 }
 .btn__tile--info {
