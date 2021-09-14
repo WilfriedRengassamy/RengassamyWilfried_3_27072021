@@ -318,10 +318,23 @@ a {
   box-shadow: 0em 0em 0.9em #c8c8c8;
   color: black;
   background-color: #f6f6f6;
-  animation: btn__base--bgcolor 300ms ease-in-out both;
+  position: relative;
+  z-index: 1;
 }
-.btn__base:hover {
+.btn__base:hover .btn__base--bg, .btn__base:hover .btn__base--icoalt {
+  opacity: 1;
+}
+.btn__base--bg {
+  border-radius: 4rem;
   background-color: #f2eafb;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 300ms ease-in-out both;
 }
 .btn__base--ico {
   display: flex;
@@ -329,6 +342,18 @@ a {
   width: 3rem;
   margin-right: -5rem;
   padding-left: 3rem;
+  position: relative;
+  z-index: 1;
+}
+.btn__base--icoalt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 300ms ease-in-out both;
 }
 .btn__base--mobile {
   width: 2rem;
@@ -355,10 +380,7 @@ a {
   transform: rotateZ(-360deg);
 }
 .btn__carte--1:hover > .btn__carte--txt {
-  animation: carte__txt--size 500ms ease-in-out both;
-}
-.btn__carte--1:hover > .btn__carte--txt h4, .btn__carte--1:hover > .btn__carte--txt p {
-  animation: carte__txt--size 500ms ease-in-out both;
+  flex: 1 1 auto;
 }
 .btn__carte--2 {
   margin: 2.5rem auto 0;
@@ -382,10 +404,7 @@ a {
   transform: rotateZ(-360deg);
 }
 .btn__carte--2:hover > .btn__carte--txt {
-  animation: carte__txt--size 500ms ease-in-out both;
-}
-.btn__carte--2:hover > .btn__carte--txt h4, .btn__carte--2:hover > .btn__carte--txt p {
-  animation: carte__txt--size 500ms ease-in-out both;
+  flex: 1 1 auto;
 }
 .btn__carte--3 {
   margin: 2.5rem auto 0;
@@ -409,10 +428,7 @@ a {
   transform: rotateZ(-360deg);
 }
 .btn__carte--3:hover > .btn__carte--txt {
-  animation: carte__txt--size 500ms ease-in-out both;
-}
-.btn__carte--3:hover > .btn__carte--txt h4, .btn__carte--3:hover > .btn__carte--txt p {
-  animation: carte__txt--size 500ms ease-in-out both;
+  flex: 1 1 auto;
 }
 .btn__carte--4 {
   margin: 2.5rem auto 0;
@@ -436,10 +452,7 @@ a {
   transform: rotateZ(-360deg);
 }
 .btn__carte--4:hover > .btn__carte--txt {
-  animation: carte__txt--size 500ms ease-in-out both;
-}
-.btn__carte--4:hover > .btn__carte--txt h4, .btn__carte--4:hover > .btn__carte--txt p {
-  animation: carte__txt--size 500ms ease-in-out both;
+  flex: 1 1 auto;
 }
 .btn__alt {
   padding-left: 3.4rem;
@@ -486,6 +499,7 @@ a {
   overflow: hidden;
   height: 100%;
   transform-origin: left;
+  flex: 2 1 auto;
 }
 .btn__carte--txt h4 {
   overflow: hidden;
@@ -504,17 +518,16 @@ a {
 }
 
 .btn__carte--price {
-  display: flex;
-  justify-content: flex-end;
-  margin: 1rem 1rem 0 0;
-  width: 8rem;
+  position: relative;
+  top: calc(45% - 2rem);
+  width: 5rem;
   height: 100%;
   transform: translateX(-1.9rem);
   transform-origin: right;
   transition: transform 500ms ease-in-out;
 }
 .btn__carte--price h4 {
-  align-self: flex-end;
+  align-self: end;
 }
 
 .btn__carte--valid {
@@ -574,15 +587,25 @@ a {
   height: 72%;
   background-position-y: 0px;
 }
-.tile__heart {
-  background-image: url(../pics/icons/heart-outline.svg);
+.tile__heart--e {
   width: 4rem;
   height: 4rem;
   margin: 3rem 5rem 0 0;
-  animation: bgopacity 300ms ease-in-out;
+  position: relative;
+  z-index: 1;
 }
-.tile:hover > .tile__heart {
-  animation: bgopacity 300ms ease-in-out;
+.tile__heart--e:hover .tile__heart--f {
+  opacity: 1;
+}
+.tile__heart--f {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 300ms ease-in-out both;
 }
 
 .btn__tile--info {

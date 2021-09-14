@@ -41,14 +41,27 @@
     &__base {
         @include btn_base;
         background-color: $discover-color;
-        animation: btn__base--bgcolor 300ms ease-in-out both;
+        position: relative;
+        z-index: 1;
         &:hover {
-            background-color: lighten($color: $color-primary, $amount: 35)
+            & .btn__base--bg, .btn__base--icoalt {
+            opacity: 1;
+            }
+        }
+        &--bg {
+            border-radius: 4rem;
+            background-color: lighten($color: $color-primary, $amount: 35);
+            @include icotransition;
         }
         &--ico {
             @include ico;
             margin-right: -5rem;
             padding-left: 3rem;
+            position: relative;
+            z-index: 1;
+        }
+        &--icoalt {
+            @include icotransition;
         }
         &--mobile {
             width: 2rem;
@@ -108,6 +121,7 @@
     @include bloc_txt;
     height: 100%;
     transform-origin: left;
+    flex: 2 1 auto;
     h4 {
         @include btn__carte--txt;
         margin-top: 2.5rem;
@@ -119,16 +133,15 @@
     }
 }
 .btn__carte--price {
-    display: flex;
-    justify-content: flex-end;
-    margin: 1rem 1rem 0 0;
-    width: 8rem;
+    position: relative;
+    top: calc(45% - 2rem);
+    width: 5rem;
     height: 100%;
     transform: translateX(-1.9rem);
     transform-origin: right;
     transition: transform 500ms ease-in-out;
     h4 {
-        align-self: flex-end;
+        align-self: end;
     }
 }
 
@@ -184,17 +197,23 @@
         height: 72%;
         background-position-y: 0px;
     }
-    &__heart {
-        background-image: url(../pics/icons/heart-outline.svg);
+    &__heart--e {
         width: 4rem;
         height: 4rem;
         margin: 3rem 5rem 0 0;
-        animation: bgopacity 300ms ease-in-out;
+        position: relative;
+        z-index: 1;
+        &:hover {
+            & .tile__heart--f {
+                opacity: 1;
+            }
+        }
     }
-    &:hover > .tile__heart {
-        animation: bgopacity 300ms ease-in-out;
+    &__heart--f {
+        @include icotransition;
     }
 }
+
 .btn__tile--info {
     @include bloc_txt;
     margin: 0 1.5rem 0 1.5rem;
