@@ -80,10 +80,7 @@
             }
         }
         & > .btn__carte--txt {
-            animation: carte__txt--size 500ms ease-in-out both;
-            h4, p {
-                animation: carte__txt--size 500ms ease-in-out both;
-            }
+            flex: 1 1 auto;
         }
     }
 }
@@ -94,4 +91,15 @@
     flex-direction: column;
     flex: auto;
     overflow: hidden;
+}
+
+@mixin icotransition{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 300ms ease-in-out both;
 }
