@@ -147,11 +147,10 @@
 }
 .btn__carte--price {
     position: relative;
-    top: calc(45% - 2.2rem);
+    margin: 3rem 0 0 2rem;
     left: calc(1% - 1.5rem);
     width: 5rem;
     height: 100%;
-    //transform: translateX(.1rem);
     h4 {
         align-self: end;
     }
