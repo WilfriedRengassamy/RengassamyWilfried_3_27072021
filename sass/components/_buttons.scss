@@ -131,10 +131,10 @@
     flex-direction: row
 }
 .btn__carte--txt {
-    @include bloc_txt;
     height: 100%;
-    transform-origin: left;
-    flex: 2 1 auto;
+    width: 50rem;
+    //transform-origin: left;
+    //transition: width 300ms ease-in-out both;
     h4 {
         @include btn__carte--txt;
         margin-top: 2.5rem;
@@ -147,12 +147,11 @@
 }
 .btn__carte--price {
     position: relative;
-    top: calc(45% - 2rem);
+    top: calc(45% - 2.2rem);
+    left: calc(1% - 1.5rem);
     width: 5rem;
     height: 100%;
-    transform: translateX(-1.9rem);
-    transform-origin: right;
-    transition: transform 500ms ease-in-out;
+    //transform: translateX(.1rem);
     h4 {
         align-self: end;
     }
@@ -241,6 +240,7 @@
     }
     p {
         @include btn__carte--txt;
+        color: black;
         margin-top: -2.3rem;
         font-size: 2.3rem;
     }
