@@ -128,12 +128,6 @@
     @include justify_left;
 }
 
-/* .bckgrnd {
-    @include block;
-    height: 50rem;
-    background-size: cover;
-} */
-
 @keyframes carteup {
     0% {
         transform: translateY(8rem);

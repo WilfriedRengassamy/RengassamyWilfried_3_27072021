@@ -62,7 +62,7 @@
 
 @keyframes carte__text--size {
     0% {width: 50rem;}
-    100% {width: 40rem;}
+    100% {width: 38rem;}
 }
 @mixin btn__carte--txt {
     overflow: hidden;
@@ -79,12 +79,9 @@
                 transform: rotateZ(-360deg);
             }
         }
-        & > .btn__carte--price {
-            //transform: translateX(3rem);
-        }
+
         & > .btn__carte--txt {
             animation: carte__text--size 500ms 50ms ease-in-out both;
-            //width: 40rem;
         }
     }
 }

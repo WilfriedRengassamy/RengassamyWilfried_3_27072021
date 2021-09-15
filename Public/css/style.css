@@ -18,7 +18,7 @@ body {
     width: 50rem;
   }
   100% {
-    width: 40rem;
+    width: 38rem;
   }
 }
 body {
@@ -203,11 +203,6 @@ a {
   padding-left: 5%;
 }
 
-/* .bckgrnd {
-    @include block;
-    height: 50rem;
-    background-size: cover;
-} */
 @keyframes carteup {
   0% {
     transform: translateY(8rem);
@@ -520,7 +515,7 @@ a {
 
 .btn__carte--price {
   position: relative;
-  top: calc(45% - 2.2rem);
+  margin: 3rem 0 0 2rem;
   left: calc(1% - 1.5rem);
   width: 5rem;
   height: 100%;
@@ -675,10 +670,12 @@ footer nav .nav__ico {
   padding-right: 1.5rem;
 }
 footer nav ul li {
+  list-style-type: none;
+}
+footer nav ul li a {
   display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  list-style-type: none;
   color: white;
 }
 

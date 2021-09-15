@@ -13,10 +13,12 @@ footer {
             padding-right: 1.5rem;
         }
         ul li {
+            list-style-type: none;
+        }
+        ul li a {
             display: flex;
             margin-top: 1rem;
             margin-bottom: 1rem;
-            list-style-type: none;       
             color: $btn__base--color;
         }
     }
