@@ -341,7 +341,7 @@ a {
   left: 0;
   opacity: 0;
   z-index: -1;
-  transition: opacity 350ms ease-in-out both;
+  transition: opacity 300ms ease-in-out both;
 }
 .btn__base--ico {
   display: flex;
@@ -361,7 +361,7 @@ a {
   left: 0;
   opacity: 0;
   z-index: -1;
-  transition: opacity 350ms ease-in-out both;
+  transition: opacity 300ms ease-in-out both;
   margin: 4.39rem 0 0 5.5rem;
 }
 .btn__base--mobile {
@@ -624,7 +624,7 @@ a {
   left: 0;
   opacity: 0;
   z-index: -1;
-  transition: opacity 350ms ease-in-out both;
+  transition: opacity 300ms ease-in-out both;
 }
 
 .btn__tile--info {
