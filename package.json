@@ -13,9 +13,12 @@
   },
   "author": "Wilfried Rengassamy",
   "license": "ISC",
-  "browserlist": "last 4 versions",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/WilfriedRengassamy/RengassamyWilfried_3_27072021/issues"
   },
-  "homepage": "https://github.com/WilfriedRengassamy/RengassamyWilfried_3_27072021#readme"
+  "homepage": "https://github.com/WilfriedRengassamy/RengassamyWilfried_3_27072021#readme",
+  "dependencies": {
+    "autoprefixer": "^10.3.4"
+  }
 }
