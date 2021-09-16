@@ -66,7 +66,7 @@
             padding-left: 3rem;
             position: relative;
             z-index: 1;
-            transition: opacity 700ms ease-in-out both;
+            transition: opacity 700ms ease-in-out;
         }
         &--icoalt {
             @include icotransition;
@@ -133,8 +133,6 @@
 .btn__carte--txt {
     height: 100%;
     width: 50rem;
-    //transform-origin: left;
-    //transition: width 300ms ease-in-out both;
     h4 {
         @include btn__carte--txt;
         margin-top: 2.5rem;

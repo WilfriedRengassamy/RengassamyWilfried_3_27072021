@@ -329,7 +329,7 @@ a {
   left: 0;
   opacity: 0;
   z-index: -1;
-  transition: opacity 300ms ease-in-out both;
+  transition: opacity 300ms ease-in-out;
 }
 .btn__base--ico {
   display: flex;
@@ -339,7 +339,7 @@ a {
   padding-left: 3rem;
   position: relative;
   z-index: 1;
-  transition: opacity 700ms ease-in-out both;
+  transition: opacity 700ms ease-in-out;
 }
 .btn__base--icoalt {
   position: absolute;
@@ -349,7 +349,7 @@ a {
   left: 0;
   opacity: 0;
   z-index: -1;
-  transition: opacity 300ms ease-in-out both;
+  transition: opacity 300ms ease-in-out;
   margin: 4.39rem 0 0 5.5rem;
 }
 .btn__base--mobile {
@@ -604,7 +604,7 @@ a {
   left: 0;
   opacity: 0;
   z-index: -1;
-  transition: opacity 300ms ease-in-out both;
+  transition: opacity 300ms ease-in-out;
 }
 
 .btn__tile--info {
