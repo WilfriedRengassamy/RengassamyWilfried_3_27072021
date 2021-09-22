@@ -47,6 +47,10 @@ a {
   text-decoration: none;
 }
 
+span {
+  font-weight: bold;
+}
+
 .container {
   animation: index 1000ms 1550ms both;
   display: flex;
@@ -515,12 +519,12 @@ a {
 
 .btn__carte--price {
   position: relative;
-  margin: 3rem 0 0 2rem;
+  margin: 7rem 0 0 2rem;
   left: calc(1% - 1.5rem);
   width: 5rem;
   height: 100%;
 }
-.btn__carte--price h4 {
+.btn__carte--price span {
   align-self: end;
 }
 
