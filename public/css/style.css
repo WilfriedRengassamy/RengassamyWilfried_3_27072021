@@ -24,11 +24,6 @@ body {
 body {
   font-family: "Roboto";
 }
-@media screen and (max-device-width: 480px) {
-  body {
-    font-size: 2.6rem;
-  }
-}
 @media screen and (min-width: 768px) {
   body {
     font-size: 1.3em;
@@ -39,14 +34,33 @@ body {
     font-size: 1em;
   }
 }
+@media screen and (max-device-width: 480px) {
+  body {
+    font-size: 2.6rem;
+  }
+}
 
 h1 {
   font-family: "shrikhand";
 }
 
 h2 {
-  font-size: 4rem;
   font-weight: 900;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  h2 {
+    font-size: 4rem;
+  }
 }
 
 h4 {
@@ -134,9 +148,29 @@ span {
     opacity: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  section {
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section {
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+}
 .loader {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   justify-self: center;
   align-content: center;
   width: 100%;
@@ -173,18 +207,104 @@ span {
   width: 100%;
   height: fit-content;
 }
-#local__ico {
-  display: flex;
-  flex-wrap: wrap;
-  width: 3rem;
-  margin-right: 3rem;
+@media screen and (min-width: 768px) {
+  #local__ico {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 1em;
+  }
 }
-#local__ico--marker {
-  width: 2rem;
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  #local__ico {
+    width: 1em;
+  }
 }
-#local__txt {
-  font-size: 2.5rem;
-  font-weight: bold;
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  #local__ico {
+    width: 1em;
+  }
+}
+@media screen and (min-width: 768px) and (max-device-width: 480px) {
+  #local__ico {
+    width: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #local__ico--marker {
+    width: 1em;
+  }
+}
+@media screen and (min-width: 768px) {
+  #local__txt {
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #local__ico {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 1em;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 768px) {
+  #local__ico {
+    width: 1em;
+  }
+}
+@media screen and (min-width: 1024px) and (min-width: 1024px) {
+  #local__ico {
+    width: 1em;
+  }
+}
+@media screen and (min-width: 1024px) and (max-device-width: 480px) {
+  #local__ico {
+    width: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #local__ico--marker {
+    width: 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #local__txt {
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  #local__ico {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 3rem;
+  }
+}
+@media screen and (max-device-width: 480px) and (min-width: 768px) {
+  #local__ico {
+    width: 1em;
+  }
+}
+@media screen and (max-device-width: 480px) and (min-width: 1024px) {
+  #local__ico {
+    width: 1em;
+  }
+}
+@media screen and (max-device-width: 480px) and (max-device-width: 480px) {
+  #local__ico {
+    width: 3rem;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  #local__ico--marker {
+    width: 2rem;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  #local__txt {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
 }
 
 #discover {
@@ -193,25 +313,70 @@ span {
   justify-content: center;
   margin: 0%;
   width: 100%;
-  padding-top: 6rem;
-  padding-bottom: 12rem;
-  height: 33rem;
   background-color: #f6f6f6;
 }
-#discover__data {
-  width: 75%;
+@media screen and (min-width: 768px) {
+  #discover__content {
+    padding-top: 1em;
+    height: 16em;
+    width: 75%;
+  }
+  #discover__content-data {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #discover__content {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    height: 11em;
+    width: 75%;
+  }
+  #discover__content--data {
+    width: 100%;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  #discover__content {
+    padding-top: 6rem;
+    padding-bottom: 12rem;
+    height: 33rem;
+  }
+  #discover__content--data {
+    margin: auto;
+    width: 100%;
+  }
 }
 
 #fonct {
   text-align: left;
-  flex-direction: column;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   background-color: white;
   height: fit-content;
 }
 #fonct h2 {
   padding-left: 5%;
+}
+@media screen and (min-width: 768px) {
+  #fonct {
+    flex-direction: column;
+    padding-top: 1em;
+    padding-bottom: 4em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #fonct {
+    flex-direction: row;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    width: 100%;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  #fonct {
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
 #restaurants {
@@ -219,6 +384,35 @@ span {
 }
 #restaurants h2 {
   padding-left: 5%;
+}
+@media screen and (min-width: 768px) {
+  #restaurants {
+    flex-direction: row;
+    padding-top: 1em;
+    width: 100%;
+  }
+  #restaurants__list {
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #restaurants {
+    flex-direction: row;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    width: 100%;
+  }
+  #restaurants__list {
+    margin-top: 5em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  #restaurants {
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+  }
 }
 
 @keyframes carteup {
@@ -310,22 +504,56 @@ span {
   width: 80%;
   align-self: center;
   text-align: center;
-  font-size: 2.3rem;
   font-weight: 400;
 }
 .btn__txt--white {
   flex-direction: row;
 }
+@media screen and (min-width: 768px) {
+  .btn__txt {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__txt {
+    font-size: 1em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__txt {
+    font-size: 2.5rem;
+  }
+}
 .btn__base {
-  margin: 2.5rem auto 0;
-  padding-left: 2rem;
-  width: 55rem;
-  height: 12rem;
   box-shadow: 0em 0em 0.9em #c8c8c8;
   color: black;
   background-color: #f6f6f6;
   position: relative;
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .btn__base {
+    margin: 1.5em auto 0;
+    padding-left: 2em;
+    width: 23em;
+    height: 5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__base {
+    margin: 1.5em auto 0;
+    padding-left: 2em;
+    width: 18em;
+    height: 5em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__base {
+    margin: 2.5rem auto 0;
+    padding-left: 2rem;
+    width: 55rem;
+    height: 12rem;
+  }
 }
 .btn__base:hover .btn__base--ico {
   opacity: 0;
@@ -352,14 +580,46 @@ span {
 .btn__base--ico {
   display: flex;
   flex-wrap: wrap;
-  width: 3rem;
-  margin-right: -5rem;
-  padding-left: 3rem;
   position: relative;
   z-index: 1;
   transition: opacity 700ms ease-in-out;
 }
+@media screen and (min-width: 768px) {
+  .btn__base--ico {
+    width: 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__base--ico {
+    width: 1em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__base--ico {
+    width: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn__base--ico {
+    margin-right: -1em;
+    padding-left: 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__base--ico {
+    margin-right: 0em;
+    padding-left: 1em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__base--ico {
+    margin-right: -3rem;
+    padding-left: 4rem;
+  }
+}
 .btn__base--icoalt {
+  display: flex;
+  flex-wrap: wrap;
   position: absolute;
   top: 0;
   right: 0;
@@ -368,16 +628,41 @@ span {
   opacity: 0;
   z-index: -1;
   transition: opacity 300ms ease-in-out;
-  margin: 4.39rem 0 0 5.5rem;
+}
+@media screen and (min-width: 768px) {
+  .btn__base--icoalt {
+    width: 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__base--icoalt {
+    width: 1em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__base--icoalt {
+    width: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn__base--icoalt {
+    margin: 4.39em 0 0 5.5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__base--icoalt {
+    margin: 0 0 0 2.35em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__base--icoalt {
+    margin: 4.39rem 0 0 5.5rem;
+  }
 }
 .btn__base--mobile {
   width: 2rem;
 }
 .btn__carte--1 {
-  margin: 2.5rem auto 0;
-  padding-left: 2rem;
-  width: 55rem;
-  height: 12rem;
   box-shadow: 0em 0em 0.9em #c8c8c8;
   color: black;
   display: flex;
@@ -387,6 +672,30 @@ span {
   overflow: hidden;
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 100ms;
+}
+@media screen and (min-width: 768px) {
+  .btn__carte--1 {
+    margin: 1.5em auto 0;
+    padding-left: 2em;
+    width: 23em;
+    height: 5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__carte--1 {
+    margin: 1.5em auto 0;
+    padding-left: 2em;
+    width: 18em;
+    height: 5em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__carte--1 {
+    margin: 2.5rem auto 0;
+    padding-left: 2rem;
+    width: 55rem;
+    height: 12rem;
+  }
 }
 .btn__carte--1:hover > .btn__carte--valid {
   transform: translateX(-10rem);
@@ -398,10 +707,6 @@ span {
   animation: carte__text--size 500ms 50ms ease-in-out both;
 }
 .btn__carte--2 {
-  margin: 2.5rem auto 0;
-  padding-left: 2rem;
-  width: 55rem;
-  height: 12rem;
   box-shadow: 0em 0em 0.9em #c8c8c8;
   color: black;
   display: flex;
@@ -411,6 +716,30 @@ span {
   overflow: hidden;
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 400ms;
+}
+@media screen and (min-width: 768px) {
+  .btn__carte--2 {
+    margin: 1.5em auto 0;
+    padding-left: 2em;
+    width: 23em;
+    height: 5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__carte--2 {
+    margin: 1.5em auto 0;
+    padding-left: 2em;
+    width: 18em;
+    height: 5em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__carte--2 {
+    margin: 2.5rem auto 0;
+    padding-left: 2rem;
+    width: 55rem;
+    height: 12rem;
+  }
 }
 .btn__carte--2:hover > .btn__carte--valid {
   transform: translateX(-10rem);
@@ -422,10 +751,6 @@ span {
   animation: carte__text--size 500ms 50ms ease-in-out both;
 }
 .btn__carte--3 {
-  margin: 2.5rem auto 0;
-  padding-left: 2rem;
-  width: 55rem;
-  height: 12rem;
   box-shadow: 0em 0em 0.9em #c8c8c8;
   color: black;
   display: flex;
@@ -435,6 +760,30 @@ span {
   overflow: hidden;
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 700ms;
+}
+@media screen and (min-width: 768px) {
+  .btn__carte--3 {
+    margin: 1.5em auto 0;
+    padding-left: 2em;
+    width: 23em;
+    height: 5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__carte--3 {
+    margin: 1.5em auto 0;
+    padding-left: 2em;
+    width: 18em;
+    height: 5em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__carte--3 {
+    margin: 2.5rem auto 0;
+    padding-left: 2rem;
+    width: 55rem;
+    height: 12rem;
+  }
 }
 .btn__carte--3:hover > .btn__carte--valid {
   transform: translateX(-10rem);
@@ -446,10 +795,6 @@ span {
   animation: carte__text--size 500ms 50ms ease-in-out both;
 }
 .btn__carte--4 {
-  margin: 2.5rem auto 0;
-  padding-left: 2rem;
-  width: 55rem;
-  height: 12rem;
   box-shadow: 0em 0em 0.9em #c8c8c8;
   color: black;
   display: flex;
@@ -459,6 +804,30 @@ span {
   overflow: hidden;
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 1200ms;
+}
+@media screen and (min-width: 768px) {
+  .btn__carte--4 {
+    margin: 1.5em auto 0;
+    padding-left: 2em;
+    width: 23em;
+    height: 5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__carte--4 {
+    margin: 1.5em auto 0;
+    padding-left: 2em;
+    width: 18em;
+    height: 5em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__carte--4 {
+    margin: 2.5rem auto 0;
+    padding-left: 2rem;
+    width: 55rem;
+    height: 12rem;
+  }
 }
 .btn__carte--4:hover > .btn__carte--valid {
   transform: translateX(-10rem);
@@ -470,10 +839,10 @@ span {
   animation: carte__text--size 500ms 50ms ease-in-out both;
 }
 .btn__alt {
+  margin: auto;
   padding-left: 3.4rem;
   padding-right: 3.4rem;
   width: fit-content;
-  height: 8.2rem;
   background: linear-gradient(-369deg, #9356DC, #FF79DA);
   color: white;
   font-weight: 500;
@@ -487,23 +856,70 @@ span {
   width: fit-content;
   font-weight: 400;
 }
+@media screen and (min-width: 768px) {
+  .btn__alt {
+    height: 4.1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__alt {
+    height: 4.1em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__alt {
+    height: 8.2rem;
+  }
+}
 .btn__sticker {
   text-align: center;
   align-self: center;
-  height: 4rem;
-  width: 4rem;
-  margin-left: -13rem;
   border-radius: 2rem;
   background-color: #9356DC;
   color: white;
   font-weight: 500;
 }
-.btn__sticker--txt {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  overflow: hidden;
-  padding-top: 0.3rem;
+@media screen and (min-width: 768px) {
+  .btn__sticker {
+    margin-left: -7em;
+    height: 2.5em;
+    width: 2.5em;
+  }
+  .btn__sticker--txt {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    overflow: hidden;
+    padding-top: 0.65em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__sticker {
+    margin-left: -5em;
+    height: 2em;
+    width: 2em;
+  }
+  .btn__sticker--txt {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    overflow: hidden;
+    padding-top: 0.5em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__sticker {
+    margin-left: -11rem;
+    height: 4rem;
+    width: 4rem;
+  }
+  .btn__sticker--txt {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    overflow: hidden;
+    padding-top: 0.3rem;
+  }
 }
 
 .btn__carte--cont {
@@ -570,26 +986,74 @@ span {
   margin: 0%;
   width: 100%;
   margin: auto;
-  margin-bottom: 3rem;
   background-color: white;
   width: 90%;
   height: 15em;
   border-radius: 1.2em;
   box-shadow: 0em 0em 0.9em #c8c8c8;
 }
+@media screen and (min-width: 768px) {
+  .tile {
+    margin-bottom: 3.5em;
+    width: 47%;
+    height: 13em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .tile {
+    margin-bottom: 6.5em;
+    width: 20em;
+    height: 11em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .tile {
+    margin-bottom: 3rem;
+    width: 90%;
+    height: 15em;
+  }
+}
 .tile__new {
   position: relative;
   text-align: center;
-  right: calc(0% - 17rem);
-  top: calc(7% - 0rem);
-  width: 16rem;
-  height: 6rem;
-  border-radius: 0.5rem;
   background-color: #99E2D0;
   color: #2c9c81;
 }
-.tile__new h4 {
-  margin: 1.5rem auto auto auto;
+@media screen and (min-width: 768px) {
+  .tile__new {
+    border-radius: 0.2em;
+    right: calc(0% - 5em);
+    top: calc(-11% - 0rem);
+    width: 6em;
+    height: 2em;
+  }
+  .tile__new span {
+    margin: 1.5em auto auto auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .tile__new {
+    border-radius: 0.2em;
+    right: calc(0% - 6.7em);
+    top: calc(-20% - 0em);
+    width: 5em;
+    height: 2.2em;
+  }
+  .tile__new span {
+    margin: 1.5em auto auto auto;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .tile__new {
+    border-radius: 0.5rem;
+    right: calc(0% - 17rem);
+    top: calc(7% - 0rem);
+    width: 16rem;
+    height: 6rem;
+  }
+  .tile__new span {
+    margin: 1.5rem auto auto auto;
+  }
 }
 .tile__pic {
   background-size: cover;
@@ -600,11 +1064,31 @@ span {
   background-position-y: 0px;
 }
 .tile__heart--e {
-  width: 4rem;
-  height: 4rem;
-  margin: 3rem 5rem 0 0;
-  position: relative;
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .tile__heart--e {
+    width: 2em;
+    height: 2em;
+    margin: 2.5em 1em 0 0;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .tile__heart--e {
+    width: 2em;
+    height: 2em;
+    margin: 1.5em 1em 0 0;
+    position: relative;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .tile__heart--e {
+    width: 4rem;
+    height: 4rem;
+    margin: 3rem 5rem 0 0;
+    position: relative;
+  }
 }
 .tile__heart--e:hover .tile__heart--e {
   opacity: 0;
@@ -631,23 +1115,47 @@ span {
   flex-direction: column;
   flex: auto;
   overflow: hidden;
-  margin: 0 1.5rem 0 1.5rem;
 }
-.btn__tile--info h4 {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  flex: auto;
-  margin-top: 2.5rem;
+@media screen and (min-width: 768px) {
+  .btn__tile--info {
+    margin: 0 1.5em 0 1.5em;
+  }
+  .btn__tile--info h4 {
+    margin-top: 0.5em;
+    font-size: 1.3em;
+  }
+  .btn__tile--info p {
+    color: black;
+    margin-top: -1.3em;
+    font-size: 1.2em;
+  }
 }
-.btn__tile--info p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  flex: auto;
-  color: black;
-  margin-top: -2.3rem;
-  font-size: 2.3rem;
+@media screen and (min-width: 1024px) {
+  .btn__tile--info {
+    margin: 0 0.7em 0 0.7em;
+  }
+  .btn__tile--info h4 {
+    margin-top: 0.5em;
+    font-size: 1.05em;
+  }
+  .btn__tile--info p {
+    color: black;
+    margin-top: -1.3em;
+    font-size: 1em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__tile--info {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+  .btn__tile--info h4 {
+    font-size: 3.5rem;
+  }
+  .btn__tile--info p {
+    color: black;
+    margin-top: -4.7rem;
+    font-size: 3rem;
+  }
 }
 
 header {
@@ -657,12 +1165,32 @@ header {
   justify-content: center;
   align-content: center;
   width: 100%;
-  height: 11rem;
   background-color: white;
   box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.9);
 }
-header a .header__logo {
-  height: 5rem;
+@media screen and (min-width: 768px) {
+  header {
+    height: 5em;
+  }
+  header a .header__logo {
+    height: 2.3em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    height: 5em;
+  }
+  header a .header__logo {
+    height: 2.5em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  header {
+    height: 11rem;
+  }
+  header a .header__logo {
+    height: 5rem;
+  }
 }
 
 footer {
@@ -683,9 +1211,23 @@ footer nav {
 footer nav .nav__ico {
   display: flex;
   flex-wrap: wrap;
-  width: 3rem;
   width: 2rem;
   padding-right: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  footer nav .nav__ico {
+    width: 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer nav .nav__ico {
+    width: 1em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  footer nav .nav__ico {
+    width: 3rem;
+  }
 }
 footer nav ul li {
   list-style-type: none;

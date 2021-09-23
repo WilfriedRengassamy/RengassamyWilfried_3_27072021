@@ -57,9 +57,29 @@
     }
 }
 
+section {
+    @include tablet {
+        margin: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+    @include desktop {
+        margin: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+    @include mobile {}
+}
+
 .loader {
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     justify-self: center;
     align-content: center;
     width: 100%;
@@ -91,41 +111,131 @@
 #local {
     @include block;
     height: fit-content;
-    &__ico {
+    @include tablet {        
+        &__ico {
         @include ico;
-        margin-right: 3rem;
+        margin-right: 1em;
         &--marker {
-            width: 2rem;
+            width: 1em;
         }
     }
     &__txt {
-        font-size: 2.5rem;
+        font-size: 1em;
         font-weight: bold;
+    }    
+}
+    @include desktop {
+        &__ico {
+        @include ico;
+        margin-right: 1em;
+        &--marker {
+            width: 1em;
+        }
+    }
+    &__txt {
+        font-size: 1em;
+        font-weight: bold;
+    }    
+}
+    @include mobile {
+        &__ico {
+            @include ico;
+            margin-right: 3rem;
+            &--marker {
+                width: 2rem;
+            }
+        }
+        &__txt {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }    
     }
 }
 
 #discover {
     @include block;
-    padding-top: 6rem;
-    padding-bottom: 12rem;
-    height: 33rem;
     background-color: $discover-color;
-    &__data {
-        width: 75%;
+    @include tablet {    
+        &__content {
+            padding-top: 1em;
+            height: 16em;  
+            width: 75%;  
+            &-data {
+                width: 100%;
+            }
+        }
+    }
+    @include desktop {
+        &__content {
+            padding-top: 1em;
+            padding-bottom: 2em;
+            height: 11em;
+            width: 75%;   
+            &--data {
+                width: 100%;
+            }
+        }
+    }
+    @include mobile {    
+        &__content {
+            padding-top: 6rem;
+            padding-bottom: 12rem;
+            height: 33rem;    
+            &--data {
+                margin: auto;
+                width: 100%;
+            }
+        }
     }
 }
 
 #fonct {
     @include justify_left;
-    flex-direction: column;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    @include tablet {
+        flex-direction: column;
+        padding-top: 1em;
+        padding-bottom: 4em;    
+    }
+    @include desktop {
+        flex-direction: row;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        width: 100%;
+    }
+    @include mobile {
+        flex-direction: column;
+        padding-top: 5rem;
+        padding-bottom: 5rem;    
+    }
     background-color: white;
     height: fit-content;
 }
 
 #restaurants {
     @include justify_left;
+    @include tablet {
+        flex-direction: row;
+        padding-top: 1em;
+        width: 100%;
+        &__list {
+            margin-top: 4em;
+        }
+    }
+    @include desktop {
+        flex-direction: row;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        width: 100%;
+        &__list {
+            margin-top: 5em;
+        }
+    }
+    @include mobile {
+        flex-direction: column;
+        padding-top: 5rem;
+        padding-bottom: 5rem; 
+        width: 100%;
+    }
 }
 
 @keyframes carteup {

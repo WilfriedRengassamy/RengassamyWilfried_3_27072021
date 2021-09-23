@@ -5,11 +5,25 @@ header {
     justify-content: center;
     align-content: center;
     width: 100%;
-    height: 11rem;
     background-color: $btn__base--color;
     box-shadow: 0rem 0rem 1rem rgba($color: #000000, $alpha: 0.9);
-    & a .header__logo {
-        height: 5rem;
+    @include tablet {
+        height: 5em;
+        & a .header__logo {
+            height: 2.3em;
+        }    
+    }
+    @include desktop {
+        height: 5em;
+        & a .header__logo {
+            height: 2.5em;
+        }    
+    }
+    @include mobile {
+        height: 11rem;
+        & a .header__logo {
+            height: 5rem;
+        }    
     }
 }
 
