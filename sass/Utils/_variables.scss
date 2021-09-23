@@ -11,3 +11,9 @@ $load__turn--del: 150ms;
 $index__del: $load__turn--dur + $load__turn--del*2;
 $load__ring--anim: $load__turn--dur $load__turn--del linear both infinite;
 $load__anim--setting: load_anim $load__ring--anim;
+
+$breakpoints: (
+    mobile: 480px,
+    tablet: 768px,
+    desktop: 1024px,
+)
