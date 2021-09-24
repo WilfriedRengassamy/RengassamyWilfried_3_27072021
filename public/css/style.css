@@ -848,7 +848,7 @@ span {
 @media screen and (min-width: 1024px) {
   .btn__carte--1 {
     border-radius: 0.7em;
-    margin: 0.5em 0 0.05em 0;
+    margin: 0.5em auto 0.05em auto;
     padding-left: 0.3em;
     width: 12em;
     height: 2.4em;
@@ -897,7 +897,7 @@ span {
 @media screen and (min-width: 1024px) {
   .btn__carte--2 {
     border-radius: 0.7em;
-    margin: 0.5em 0 0.05em 0;
+    margin: 0.5em auto 0.05em auto;
     padding-left: 0.3em;
     width: 12em;
     height: 2.4em;
@@ -946,7 +946,7 @@ span {
 @media screen and (min-width: 1024px) {
   .btn__carte--3 {
     border-radius: 0.7em;
-    margin: 0.5em 0 0.05em 0;
+    margin: 0.5em auto 0.05em auto;
     padding-left: 0.3em;
     width: 12em;
     height: 2.4em;
@@ -995,7 +995,7 @@ span {
 @media screen and (min-width: 1024px) {
   .btn__carte--4 {
     border-radius: 0.7em;
-    margin: 0.5em 0 0.05em 0;
+    margin: 0.5em auto 0.05em auto;
     padding-left: 0.3em;
     width: 12em;
     height: 2.4em;
