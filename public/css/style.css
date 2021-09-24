@@ -13,12 +13,34 @@ body {
     opacity: 1;
   }
 }
-@keyframes carte__text--size {
-  0% {
-    width: 50rem;
+@media screen and (min-width: 768px) {
+  @keyframes carte__text--size {
+    0% {
+      width: 22em;
+    }
+    100% {
+      width: 8em;
+    }
   }
-  100% {
-    width: 38rem;
+}
+@media screen and (min-width: 1024px) {
+  @keyframes carte__text--size {
+    0% {
+      width: 39em;
+    }
+    100% {
+      width: 34em;
+    }
+  }
+}
+@media screen and (max-device-width: 480px) {
+  @keyframes carte__text--size {
+    0% {
+      width: 50rem;
+    }
+    100% {
+      width: 38rem;
+    }
   }
 }
 body {
@@ -42,6 +64,21 @@ body {
 
 h1 {
   font-family: "shrikhand";
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 5.5em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  h1 {
+    font-size: 4.5rem;
+  }
 }
 
 h2 {
@@ -89,27 +126,83 @@ span {
 }
 .container__resto1 {
   background-image: url(../pics/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-size: 125%;
   background-repeat: no-repeat;
   animation: bgopacity 500ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .container__resto1 {
+    background-size: 105%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container__resto1 {
+    background-size: 100%;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .container__resto1 {
+    background-size: 125%;
+  }
 }
 .container__resto2 {
   background-image: url(../pics/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-  background-size: 125%;
   background-repeat: no-repeat;
   animation: bgopacity 500ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .container__resto2 {
+    background-size: 105%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container__resto2 {
+    background-size: 100%;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .container__resto2 {
+    background-size: 125%;
+  }
 }
 .container__resto3 {
   background-image: url(../pics/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  background-size: 125%;
   background-repeat: no-repeat;
   animation: bgopacity 500ms ease-in-out;
 }
+@media screen and (min-width: 768px) {
+  .container__resto3 {
+    background-size: 105%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container__resto3 {
+    background-size: 100%;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .container__resto3 {
+    background-size: 125%;
+  }
+}
 .container__resto4 {
   background-image: url(../pics/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-  background-size: 125%;
   background-repeat: no-repeat;
   animation: bgopacity 500ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .container__resto4 {
+    background-size: 105%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container__resto4 {
+    background-size: 100%;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .container__resto4 {
+    background-size: 125%;
+  }
 }
 
 @keyframes load_anim {
@@ -194,9 +287,23 @@ span {
   animation-direction: reverse;
 }
 
-.header__backpage {
-  width: 4.5rem;
-  margin-left: -23rem;
+@media screen and (min-width: 768px) {
+  .header__backpage {
+    width: 2em;
+    margin-left: -16em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__backpage {
+    width: 7em;
+    margin-left: -29em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .header__backpage {
+    width: 4.5rem;
+    margin-left: -23rem;
+  }
 }
 
 #local {
@@ -413,6 +520,9 @@ span {
     padding-bottom: 5rem;
     width: 100%;
   }
+  #restaurants__list {
+    margin-top: 1rem;
+  }
 }
 
 @keyframes carteup {
@@ -436,11 +546,32 @@ span {
   justify-content: center;
   margin: 0%;
   width: 100%;
-  margin-top: 30rem;
-  border-radius: 10rem 10rem 0 0;
   text-align: left;
   background-color: #f6f6f6;
   animation: carteup 800ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .carte {
+    border-radius: 5em 5em 0 0;
+    margin: auto;
+    margin-top: 10em;
+    width: 71%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carte {
+    border-radius: 5em 5em 0 0;
+    margin: auto;
+    margin-top: 15em;
+    width: 68%;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .carte {
+    border-radius: 10rem 10rem 0 0;
+    margin-top: 30rem;
+    width: 100%;
+  }
 }
 .carte__menu {
   width: 100%;
@@ -452,15 +583,50 @@ span {
 .carte__menu h2 {
   padding-left: 5%;
 }
-.carte__title {
-  padding-left: 2.5rem;
-}
 .carte__title--underline {
-  height: 0.5rem;
-  width: 6rem;
-  margin-top: -1.5rem;
-  margin-bottom: 2.5rem;
   background-color: #99E2D0;
+}
+@media screen and (min-width: 768px) {
+  .carte__title {
+    padding-left: 2em;
+  }
+  .carte__title p {
+    font-size: 0.7em;
+  }
+  .carte__title--underline {
+    height: 0.13em;
+    width: 2em;
+    margin-top: -0.6em;
+    margin-bottom: 0.5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carte__title {
+    padding-left: 10.3em;
+  }
+  .carte__title p {
+    font-size: 1.3em;
+  }
+  .carte__title--underline {
+    height: 0.3em;
+    width: 4.2em;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .carte__title {
+    padding-left: 2.5rem;
+  }
+  .carte__title p {
+    font-size: 3rem;
+  }
+  .carte__title--underline {
+    height: 0.5rem;
+    width: 6rem;
+    margin-top: -2.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 .carte__order {
   padding-top: 2rem;
@@ -663,180 +829,200 @@ span {
   width: 2rem;
 }
 .btn__carte--1 {
-  box-shadow: 0em 0em 0.9em #c8c8c8;
-  color: black;
   display: flex;
   flex-direction: row;
   background-color: white;
-  border-radius: 3rem;
   overflow: hidden;
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 100ms;
 }
 @media screen and (min-width: 768px) {
   .btn__carte--1 {
-    margin: 1.5em auto 0;
-    padding-left: 2em;
-    width: 23em;
-    height: 5em;
+    border-radius: 0.6em;
+    margin: 0.5em 0.3em 0 0;
+    padding-left: 0.5em;
+    width: 13em;
+    height: 2.7em;
   }
 }
 @media screen and (min-width: 1024px) {
   .btn__carte--1 {
-    margin: 1.5em auto 0;
-    padding-left: 2em;
-    width: 18em;
-    height: 5em;
+    border-radius: 0.7em;
+    margin: 0.5em 0 0.5em 0;
+    padding-left: 1em;
+    width: 45em;
+    height: 5.1em;
   }
 }
 @media screen and (max-device-width: 480px) {
   .btn__carte--1 {
-    margin: 2.5rem auto 0;
+    border-radius: 3rem;
+    margin: 2.5rem 0 0.5em 0;
     padding-left: 2rem;
-    width: 55rem;
+    width: 56rem;
     height: 12rem;
   }
 }
 .btn__carte--1:hover > .btn__carte--valid {
   transform: translateX(-10rem);
 }
+@media screen and (min-width: 1024px) {
+  .btn__carte--1:hover > .btn__carte--valid {
+    transform: translateX(12.3em);
+  }
+}
 .btn__carte--1:hover > .btn__carte--valid .valid {
   transform: rotateZ(-360deg);
 }
 .btn__carte--1:hover > .btn__carte--txt {
-  animation: carte__text--size 500ms 50ms ease-in-out both;
+  animation: carte__text--size 500ms ease-in-out both;
 }
 .btn__carte--2 {
-  box-shadow: 0em 0em 0.9em #c8c8c8;
-  color: black;
   display: flex;
   flex-direction: row;
   background-color: white;
-  border-radius: 3rem;
   overflow: hidden;
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 400ms;
 }
 @media screen and (min-width: 768px) {
   .btn__carte--2 {
-    margin: 1.5em auto 0;
-    padding-left: 2em;
-    width: 23em;
-    height: 5em;
+    border-radius: 0.6em;
+    margin: 0.5em 0.3em 0 0;
+    padding-left: 0.5em;
+    width: 13em;
+    height: 2.7em;
   }
 }
 @media screen and (min-width: 1024px) {
   .btn__carte--2 {
-    margin: 1.5em auto 0;
-    padding-left: 2em;
-    width: 18em;
-    height: 5em;
+    border-radius: 0.7em;
+    margin: 0.5em 0 0.5em 0;
+    padding-left: 1em;
+    width: 45em;
+    height: 5.1em;
   }
 }
 @media screen and (max-device-width: 480px) {
   .btn__carte--2 {
-    margin: 2.5rem auto 0;
+    border-radius: 3rem;
+    margin: 2.5rem 0 0.5em 0;
     padding-left: 2rem;
-    width: 55rem;
+    width: 56rem;
     height: 12rem;
   }
 }
 .btn__carte--2:hover > .btn__carte--valid {
   transform: translateX(-10rem);
 }
+@media screen and (min-width: 1024px) {
+  .btn__carte--2:hover > .btn__carte--valid {
+    transform: translateX(12.3em);
+  }
+}
 .btn__carte--2:hover > .btn__carte--valid .valid {
   transform: rotateZ(-360deg);
 }
 .btn__carte--2:hover > .btn__carte--txt {
-  animation: carte__text--size 500ms 50ms ease-in-out both;
+  animation: carte__text--size 500ms ease-in-out both;
 }
 .btn__carte--3 {
-  box-shadow: 0em 0em 0.9em #c8c8c8;
-  color: black;
   display: flex;
   flex-direction: row;
   background-color: white;
-  border-radius: 3rem;
   overflow: hidden;
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 700ms;
 }
 @media screen and (min-width: 768px) {
   .btn__carte--3 {
-    margin: 1.5em auto 0;
-    padding-left: 2em;
-    width: 23em;
-    height: 5em;
+    border-radius: 0.6em;
+    margin: 0.5em 0.3em 0 0;
+    padding-left: 0.5em;
+    width: 13em;
+    height: 2.7em;
   }
 }
 @media screen and (min-width: 1024px) {
   .btn__carte--3 {
-    margin: 1.5em auto 0;
-    padding-left: 2em;
-    width: 18em;
-    height: 5em;
+    border-radius: 0.7em;
+    margin: 0.5em 0 0.5em 0;
+    padding-left: 1em;
+    width: 45em;
+    height: 5.1em;
   }
 }
 @media screen and (max-device-width: 480px) {
   .btn__carte--3 {
-    margin: 2.5rem auto 0;
+    border-radius: 3rem;
+    margin: 2.5rem 0 0.5em 0;
     padding-left: 2rem;
-    width: 55rem;
+    width: 56rem;
     height: 12rem;
   }
 }
 .btn__carte--3:hover > .btn__carte--valid {
   transform: translateX(-10rem);
 }
+@media screen and (min-width: 1024px) {
+  .btn__carte--3:hover > .btn__carte--valid {
+    transform: translateX(12.3em);
+  }
+}
 .btn__carte--3:hover > .btn__carte--valid .valid {
   transform: rotateZ(-360deg);
 }
 .btn__carte--3:hover > .btn__carte--txt {
-  animation: carte__text--size 500ms 50ms ease-in-out both;
+  animation: carte__text--size 500ms ease-in-out both;
 }
 .btn__carte--4 {
-  box-shadow: 0em 0em 0.9em #c8c8c8;
-  color: black;
   display: flex;
   flex-direction: row;
   background-color: white;
-  border-radius: 3rem;
   overflow: hidden;
   animation: btncarteup 2s ease-in-out both;
   animation-delay: 1200ms;
 }
 @media screen and (min-width: 768px) {
   .btn__carte--4 {
-    margin: 1.5em auto 0;
-    padding-left: 2em;
-    width: 23em;
-    height: 5em;
+    border-radius: 0.6em;
+    margin: 0.5em 0.3em 0 0;
+    padding-left: 0.5em;
+    width: 13em;
+    height: 2.7em;
   }
 }
 @media screen and (min-width: 1024px) {
   .btn__carte--4 {
-    margin: 1.5em auto 0;
-    padding-left: 2em;
-    width: 18em;
-    height: 5em;
+    border-radius: 0.7em;
+    margin: 0.5em 0 0.5em 0;
+    padding-left: 1em;
+    width: 45em;
+    height: 5.1em;
   }
 }
 @media screen and (max-device-width: 480px) {
   .btn__carte--4 {
-    margin: 2.5rem auto 0;
+    border-radius: 3rem;
+    margin: 2.5rem 0 0.5em 0;
     padding-left: 2rem;
-    width: 55rem;
+    width: 56rem;
     height: 12rem;
   }
 }
 .btn__carte--4:hover > .btn__carte--valid {
   transform: translateX(-10rem);
 }
+@media screen and (min-width: 1024px) {
+  .btn__carte--4:hover > .btn__carte--valid {
+    transform: translateX(12.3em);
+  }
+}
 .btn__carte--4:hover > .btn__carte--valid .valid {
   transform: rotateZ(-360deg);
 }
 .btn__carte--4:hover > .btn__carte--txt {
-  animation: carte__text--size 500ms 50ms ease-in-out both;
+  animation: carte__text--size 500ms ease-in-out both;
 }
 .btn__alt {
   margin: auto;
@@ -922,61 +1108,175 @@ span {
   }
 }
 
-.btn__carte--cont {
-  display: flex;
-  flex-direction: row;
+@media screen and (min-width: 768px) {
+  .btn__carte--txt {
+    height: 100%;
+    width: 22em;
+  }
+  .btn__carte--txt h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex: auto;
+    margin-top: 0.7em;
+    font-size: 0.65em;
+  }
+  .btn__carte--txt p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex: auto;
+    margin-top: -1.2em;
+    font-size: 0.55em;
+  }
 }
-
-.btn__carte--txt {
-  height: 100%;
-  width: 50rem;
+@media screen and (min-width: 1024px) {
+  .btn__carte--txt {
+    height: 100%;
+    width: 39em;
+  }
+  .btn__carte--txt h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex: auto;
+    margin-top: 0.8em;
+    font-size: 1.4em;
+  }
+  .btn__carte--txt p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex: auto;
+    margin-top: -1.4em;
+    font-size: 1.35em;
+  }
 }
-.btn__carte--txt h4 {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  flex: auto;
-  margin-top: 2.5rem;
-}
-.btn__carte--txt p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  flex: auto;
-  margin-top: -2.3rem;
-  font-size: 2.3rem;
+@media screen and (max-device-width: 480px) {
+  .btn__carte--txt {
+    height: 100%;
+    width: 50rem;
+  }
+  .btn__carte--txt h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex: auto;
+    margin-top: 2.5rem;
+    font-size: 2.6rem;
+  }
+  .btn__carte--txt p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex: auto;
+    margin-top: -2rem;
+    font-size: 2.3rem;
+  }
 }
 
 .btn__carte--price {
   position: relative;
-  margin: 7rem 0 0 2rem;
-  left: calc(1% - 1.5rem);
-  width: 5rem;
-  height: 100%;
 }
-.btn__carte--price span {
-  align-self: end;
+@media screen and (min-width: 768px) {
+  .btn__carte--price {
+    margin: 1.05em 0 0 0.7em;
+    left: calc(3% - -0.1em);
+    width: 5em;
+    height: 100%;
+  }
+  .btn__carte--price span {
+    align-self: end;
+    font-size: 0.65em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__carte--price {
+    margin: 3em 0 0 0.7em;
+    left: calc(1% - .5em);
+    width: 5em;
+    height: 100%;
+  }
+  .btn__carte--price span {
+    align-self: end;
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__carte--price {
+    margin: 7rem 0 0 2rem;
+    left: calc(1% - 1.5rem);
+    width: 5rem;
+    height: 100%;
+  }
+  .btn__carte--price span {
+    align-self: end;
+    font-size: 3rem;
+  }
 }
 
 .btn__carte--valid {
   position: absolute;
-  margin-left: 1rem;
-  width: 10rem;
-  height: 100%;
   background-color: #99E2D0;
-  right: calc(50% - 39rem);
-  transform: translateX(11.1rem);
-  transform-origin: right;
-  transition: transform 500ms ease-in-out;
 }
-.btn__carte--valid .valid {
-  position: absolute;
-  left: calc(50% - 2rem);
-  top: calc(50% - 2rem);
-  width: 3.5rem;
-  height: 3.5rem;
-  transform: rotateZ(-225deg);
-  transition: transform 300ms 300ms ease-in-out;
+@media screen and (min-width: 768px) {
+  .btn__carte--valid {
+    margin-left: 1em;
+    width: 2.5em;
+    height: 100%;
+    right: calc(50% - 10.8em);
+    transform: translateX(11.1em);
+    transform-origin: right;
+    transition: transform 500ms ease-in-out;
+  }
+  .btn__carte--valid .valid {
+    position: absolute;
+    left: calc(50% - .4em);
+    top: calc(50% - .38em);
+    width: 0.7em;
+    height: 0.7em;
+    transform: rotateZ(-225deg);
+    transition: transform 300ms 300ms ease-in-out;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn__carte--valid {
+    margin-left: 1em;
+    width: 5em;
+    height: 100%;
+    transform: translateX(17.3em);
+    transform-origin: right;
+    transition: transform 500ms ease-in-out;
+  }
+  .btn__carte--valid .valid {
+    position: absolute;
+    left: calc(50% - .7em);
+    top: calc(50% - .7em);
+    width: 1.5em;
+    height: 1.5em;
+    transform: rotateZ(-225deg);
+    transition: transform 300ms 300ms ease-in-out;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .btn__carte--valid {
+    margin-left: 1rem;
+    width: 10rem;
+    height: 100%;
+    right: calc(50% - 39rem);
+    transform: translateX(11.1rem);
+    transform-origin: right;
+    transition: transform 500ms ease-in-out;
+  }
+  .btn__carte--valid .valid {
+    position: absolute;
+    left: calc(50% - 2rem);
+    top: calc(50% - 2rem);
+    width: 3.5rem;
+    height: 3.5rem;
+    transform: rotateZ(-225deg);
+    transition: transform 300ms 300ms ease-in-out;
+  }
 }
 
 .tile {
@@ -1178,10 +1478,10 @@ header {
 }
 @media screen and (min-width: 1024px) {
   header {
-    height: 5em;
+    height: 6em;
   }
   header a .header__logo {
-    height: 2.5em;
+    height: 3.5em;
   }
 }
 @media screen and (max-device-width: 480px) {

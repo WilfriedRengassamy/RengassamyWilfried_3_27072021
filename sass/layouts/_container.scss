@@ -104,8 +104,18 @@ section {
 }
 
 .header__backpage {
-    width: 4.5rem;
-    margin-left: -23rem;
+    @include tablet {
+        width: 2em;
+        margin-left: -16em;    
+    }
+    @include desktop {
+        width: 7em;
+        margin-left: -29em;    
+    }
+    @include mobile {
+        width: 4.5rem;
+        margin-left: -23rem;    
+    }
 }
 
 #local {
@@ -235,6 +245,9 @@ section {
         padding-top: 5rem;
         padding-bottom: 5rem; 
         width: 100%;
+        &__list {
+            margin-top: 1rem;
+        }
     }
 }
 
@@ -256,8 +269,23 @@ section {
 
 .carte {
     @include block;
-    margin-top: 30rem;
-    border-radius: 10rem 10rem 0 0;
+    @include tablet {
+        border-radius: 5em 5em 0 0;
+        margin: auto;
+        margin-top: 10em;
+        width: 71%;
+    }
+    @include desktop {
+        border-radius: 5em 5em 0 0;
+        margin: auto;
+        margin-top: 15em;
+        width: 68%;
+    }
+    @include mobile {
+        border-radius: 10rem 10rem 0 0;
+        margin-top: 30rem;
+        width: 100%;
+    }
     text-align: left;
     background-color: $discover-color;
     animation: carteup 800ms ease-in-out;
@@ -269,13 +297,44 @@ section {
         font-size: 2.5rem;
     }
     &__title {
-        padding-left: 2.5rem;    
         &--underline {
-            height: 0.5rem;
-            width: 6rem;
-            margin-top: -1.5rem;
-            margin-bottom: 2.5rem;
             background-color: $color-third;
+        }
+        @include tablet {
+            padding-left: 2em;
+            p {
+                font-size: .7em;
+            }
+            &--underline {
+                height: .13em;
+                width: 2em;
+                margin-top: -0.6em;
+                margin-bottom: 0.5em;
+            }    
+        }
+        @include desktop {
+            p{
+                font-size: 1.3em;
+            }
+            padding-left: 10.3em;    
+            &--underline {
+                height: .3em;
+                width: 4.2em;
+                margin-top: -1em;
+                margin-bottom: 1.5em;
+            }    
+        }
+        @include mobile {
+            p {
+                font-size: 3rem;
+            }
+            padding-left: 2.5rem;    
+            &--underline {
+                height: 0.5rem;
+                width: 6rem;
+                margin-top: -2.5rem;
+                margin-bottom: .5rem;
+            }    
         }
     }
     &__order {

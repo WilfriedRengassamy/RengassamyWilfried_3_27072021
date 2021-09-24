@@ -75,7 +75,15 @@
 }
 
 @mixin backgrounddsp {
-    background-size: 125%;
+    @include tablet {
+        background-size: 105%;
+    }
+    @include desktop {
+        background-size: 100%;
+    }
+    @include mobile {
+        background-size: 125%;
+    }
     background-repeat: no-repeat;
     animation: bgopacity 500ms ease-in-out;
 }
@@ -89,20 +97,54 @@
 }
 
 @mixin btn__carte {
-    @include btn_base;
+    @include tablet {
+        border-radius: .6em;
+        margin: .5em .3em 0 0;
+        padding-left: .5em;
+        width: 13em;
+        height: 2.7em;    
+    }
+    @include desktop {
+        border-radius: .7em;
+        margin: .5em 0 .5em 0;
+        padding-left: 1em;
+        width: 45em;
+        height: 5.1em;    
+    }
+    @include mobile {
+        border-radius: 3rem;
+        margin: 2.5rem 0 .5em 0;
+        padding-left: 2rem;
+        width: 56rem;
+        height: 12rem;
+    }
     display: flex;
     flex-direction: row;
     background-color: $btn__base--color;
-    border-radius: 3rem;
     overflow: hidden;
     animation: btncarteup 2s ease-in-out both;
     @include btn__carte--validanim;
 }
 
-@keyframes carte__text--size {
-    0% {width: 50rem;}
-    100% {width: 38rem;}
+@include tablet {
+    @keyframes carte__text--size {
+        0% {width: 22em;}
+        100% {width: 8em;}
+    }
 }
+@include desktop {
+    @keyframes carte__text--size {
+        0% {width: 39em;}
+        100% {width: 34em;}
+    }
+}
+@include mobile {
+    @keyframes carte__text--size {
+        0% {width: 50rem;}
+        100% {width: 38rem;}
+    }
+}
+
 @mixin btn__carte--txt {
     overflow: hidden;
     white-space: nowrap;
@@ -114,13 +156,16 @@
     &:hover {
         & > .btn__carte--valid {
             transform: translateX(-10rem);
+            @include desktop {
+                transform: translateX(12.3em);
+            }
             .valid {
                 transform: rotateZ(-360deg);
             }
         }
 
         & > .btn__carte--txt {
-            animation: carte__text--size 500ms 50ms ease-in-out both;
+            animation: carte__text--size 500ms  ease-in-out both;
         }
     }
 }

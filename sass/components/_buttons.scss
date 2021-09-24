@@ -182,52 +182,141 @@
         font-weight: 500;
     }
 }
-.btn__carte--cont {
-    display: flex;
-    flex-direction: row
-}
+
 .btn__carte--txt {
-    height: 100%;
-    width: 50rem;
-    h4 {
-        @include btn__carte--txt;
-        margin-top: 2.5rem;
+    @include tablet {
+        height: 100%;
+        width: 22em;
+        h4 {
+            @include btn__carte--txt;
+            margin-top: .7em;
+            font-size: .65em;
+        }
+        p {
+            @include btn__carte--txt;
+            margin-top: -1.2em;
+            font-size: .55em;
+        }    
     }
-    p {
-        @include btn__carte--txt;
-        margin-top: -2.3rem;
-        font-size: 2.3rem;
+    @include desktop {
+        height: 100%;
+        width: 39em;
+        h4 {
+            @include btn__carte--txt;
+            margin-top: .8em;
+            font-size: 1.4em;
+        }
+        p {
+            @include btn__carte--txt;
+            margin-top: -1.4em;
+            font-size: 1.35em;
+        }    
+    }
+    @include mobile {
+        height: 100%;
+        width: 50rem;
+        h4 {
+            @include btn__carte--txt;
+            margin-top: 2.5rem;
+            font-size: 2.6rem;
+        }
+        p {
+            @include btn__carte--txt;
+            margin-top: -2rem;
+            font-size: 2.3rem;
+        }    
     }
 }
 .btn__carte--price {
     position: relative;
-    margin: 7rem 0 0 2rem;
-    left: calc(1% - 1.5rem);
-    width: 5rem;
-    height: 100%;
-    span {
-        align-self: end;
+    @include tablet {
+        margin: 1.05em 0 0 .7em;
+        left: calc(3% - -0.1em);
+        width: 5em;
+        height: 100%;
+        span {
+            align-self: end;
+            font-size: .65em;
+        }    
+    }
+    @include desktop {
+        margin: 3em 0 0 .7em;
+        left: calc(1% - .5em);
+        width: 5em;
+        height: 100%;
+        span {
+            align-self: end;
+            font-size: 1.4em;
+        }    
+    }
+    @include mobile {
+        margin: 7rem 0 0 2rem;
+        left: calc(1% - 1.5rem);
+        width: 5rem;
+        height: 100%;
+        span {
+            align-self: end;
+            font-size: 3rem;
+        }    
     }
 }
 
 .btn__carte--valid {
     position: absolute;
-    margin-left: 1rem;
-    width: 10rem;
-    height: 100%;
     background-color: $color-third;
-    right: calc(50% - 39rem);
-    transform: translateX(11.1rem);
-    transform-origin: right;
-    transition: transform 500ms ease-in-out;
-    .valid {
-        position: absolute;
-        left: calc(50% - 2rem);
-        top: calc(50% - 2rem);    
-        width: 3.5rem;
-        height: 3.5rem;
-        transform: rotateZ(-225deg);
-        transition: transform 300ms 300ms ease-in-out;
+    @include tablet {
+        margin-left: 1em;
+        width: 2.5em;
+        height: 100%;
+        right: calc(50% - 10.8em);
+        transform: translateX(11.1em);
+        transform-origin: right;
+        transition: transform 500ms ease-in-out;
+        .valid {
+            position: absolute;
+            left: calc(50% - .4em);
+            top: calc(50% - .38em);    
+            width: .7em;
+            height: .7em;
+            transform: rotateZ(-225deg);
+            transition: transform 300ms 300ms ease-in-out;
+        }    
+    }
+    @include desktop {
+        margin-left: 1em;
+        width: 5em;
+        height: 100%;
+        //right: calc(50% - 11.87em);
+        transform: translateX(17.3em);
+        transform-origin: right;
+        transition: transform 500ms ease-in-out;
+        .valid {
+            position: absolute;
+            left: calc(50% - .7em);
+            top: calc(50% - .7em);    
+            width: 1.5em;
+            height: 1.5em;
+            transform: rotateZ(-225deg);
+            transition: transform 300ms 300ms ease-in-out;
+        }    
+    }
+    @include mobile {
+        margin-left: 1rem;
+        width: 10rem;
+        height: 100%;
+        right: calc(50% - 39rem);
+        transform: translateX(11.1rem);
+        transform-origin: right;
+        transition: transform 500ms ease-in-out;
+        .valid {
+            position: absolute;
+            left: calc(50% - 2rem);
+            top: calc(50% - 2rem);    
+            width: 3.5rem;
+            height: 3.5rem;
+            transform: rotateZ(-225deg);
+            transition: transform 300ms 300ms ease-in-out;
+        }    
     }
 }
 

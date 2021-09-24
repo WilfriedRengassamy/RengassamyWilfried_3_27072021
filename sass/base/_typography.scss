@@ -14,6 +14,15 @@ body {
 
 h1 {
     font-family: 'shrikhand';
+    @include tablet {
+        font-size: 2em;
+    }
+    @include desktop {
+        font-size: 5.5em;
+    }
+    @include mobile {
+        font-size: 4.5rem;
+    }
 }
 
 h2 {
