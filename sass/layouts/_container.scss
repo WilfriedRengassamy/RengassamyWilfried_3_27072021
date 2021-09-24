@@ -2,19 +2,19 @@
     animation: index 1000ms $index__del both;
     @include block;
     &__resto1 {
-        background-image: url(../pics/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-image: url(../../pics/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
         @include backgrounddsp;
     }
     &__resto2 {
-        background-image: url(../pics/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+        background-image: url(../../pics/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
         @include backgrounddsp;
     }
     &__resto3 {
-        background-image: url(../pics/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        background-image: url(../../pics/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
         @include backgrounddsp;
     }
     &__resto4 {
-        background-image: url(../pics/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        background-image: url(../../pics/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
         @include backgrounddsp;
     }
 }
@@ -109,7 +109,7 @@ section {
         margin-left: -16em;    
     }
     @include desktop {
-        width: 7em;
+        width: 3em;
         margin-left: -29em;    
     }
     @include mobile {
@@ -314,14 +314,14 @@ section {
         }
         @include desktop {
             p{
-                font-size: 1.3em;
+                font-size: .7em;
             }
-            padding-left: 10.3em;    
+            padding-left: 3.3em;    
             &--underline {
-                height: .3em;
-                width: 4.2em;
-                margin-top: -1em;
-                margin-bottom: 1.5em;
+                height: .1em;
+                width: 2em;
+                margin-top: -0.6em;
+                margin-bottom: .2em;
             }    
         }
         @include mobile {

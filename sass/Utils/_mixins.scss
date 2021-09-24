@@ -106,10 +106,10 @@
     }
     @include desktop {
         border-radius: .7em;
-        margin: .5em 0 .5em 0;
-        padding-left: 1em;
-        width: 45em;
-        height: 5.1em;    
+        margin: .5em 0 .05em 0;
+        padding-left: .3em;
+        width: 12em;
+        height: 2.4em;    
     }
     @include mobile {
         border-radius: 3rem;
@@ -134,8 +134,8 @@
 }
 @include desktop {
     @keyframes carte__text--size {
-        0% {width: 39em;}
-        100% {width: 34em;}
+        0% {width: 50em;}
+        100% {width: 14em;}
     }
 }
 @include mobile {
@@ -157,7 +157,7 @@
         & > .btn__carte--valid {
             transform: translateX(-10rem);
             @include desktop {
-                transform: translateX(12.3em);
+                transform: translateX(-4.4em);
             }
             .valid {
                 transform: rotateZ(-360deg);
@@ -165,7 +165,7 @@
         }
 
         & > .btn__carte--txt {
-            animation: carte__text--size 500ms  ease-in-out both;
+            animation: carte__text--size 500ms ease-in-out both;
         }
     }
 }

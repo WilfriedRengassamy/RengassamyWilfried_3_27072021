@@ -26,10 +26,10 @@ body {
 @media screen and (min-width: 1024px) {
   @keyframes carte__text--size {
     0% {
-      width: 39em;
+      width: 50em;
     }
     100% {
-      width: 34em;
+      width: 14em;
     }
   }
 }
@@ -72,7 +72,7 @@ h1 {
 }
 @media screen and (min-width: 1024px) {
   h1 {
-    font-size: 5.5em;
+    font-size: 3.5em;
   }
 }
 @media screen and (max-device-width: 480px) {
@@ -125,7 +125,7 @@ span {
   width: 100%;
 }
 .container__resto1 {
-  background-image: url(../pics/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(../../pics/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-repeat: no-repeat;
   animation: bgopacity 500ms ease-in-out;
 }
@@ -145,7 +145,7 @@ span {
   }
 }
 .container__resto2 {
-  background-image: url(../pics/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-image: url(../../pics/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-repeat: no-repeat;
   animation: bgopacity 500ms ease-in-out;
 }
@@ -165,7 +165,7 @@ span {
   }
 }
 .container__resto3 {
-  background-image: url(../pics/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(../../pics/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-repeat: no-repeat;
   animation: bgopacity 500ms ease-in-out;
 }
@@ -185,7 +185,7 @@ span {
   }
 }
 .container__resto4 {
-  background-image: url(../pics/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-image: url(../../pics/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-repeat: no-repeat;
   animation: bgopacity 500ms ease-in-out;
 }
@@ -295,7 +295,7 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .header__backpage {
-    width: 7em;
+    width: 3em;
     margin-left: -29em;
   }
 }
@@ -602,16 +602,16 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .carte__title {
-    padding-left: 10.3em;
+    padding-left: 3.3em;
   }
   .carte__title p {
-    font-size: 1.3em;
+    font-size: 0.7em;
   }
   .carte__title--underline {
-    height: 0.3em;
-    width: 4.2em;
-    margin-top: -1em;
-    margin-bottom: 1.5em;
+    height: 0.1em;
+    width: 2em;
+    margin-top: -0.6em;
+    margin-bottom: 0.2em;
   }
 }
 @media screen and (max-device-width: 480px) {
@@ -848,10 +848,10 @@ span {
 @media screen and (min-width: 1024px) {
   .btn__carte--1 {
     border-radius: 0.7em;
-    margin: 0.5em 0 0.5em 0;
-    padding-left: 1em;
-    width: 45em;
-    height: 5.1em;
+    margin: 0.5em 0 0.05em 0;
+    padding-left: 0.3em;
+    width: 12em;
+    height: 2.4em;
   }
 }
 @media screen and (max-device-width: 480px) {
@@ -868,7 +868,7 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .btn__carte--1:hover > .btn__carte--valid {
-    transform: translateX(12.3em);
+    transform: translateX(-4.4em);
   }
 }
 .btn__carte--1:hover > .btn__carte--valid .valid {
@@ -897,10 +897,10 @@ span {
 @media screen and (min-width: 1024px) {
   .btn__carte--2 {
     border-radius: 0.7em;
-    margin: 0.5em 0 0.5em 0;
-    padding-left: 1em;
-    width: 45em;
-    height: 5.1em;
+    margin: 0.5em 0 0.05em 0;
+    padding-left: 0.3em;
+    width: 12em;
+    height: 2.4em;
   }
 }
 @media screen and (max-device-width: 480px) {
@@ -917,7 +917,7 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .btn__carte--2:hover > .btn__carte--valid {
-    transform: translateX(12.3em);
+    transform: translateX(-4.4em);
   }
 }
 .btn__carte--2:hover > .btn__carte--valid .valid {
@@ -946,10 +946,10 @@ span {
 @media screen and (min-width: 1024px) {
   .btn__carte--3 {
     border-radius: 0.7em;
-    margin: 0.5em 0 0.5em 0;
-    padding-left: 1em;
-    width: 45em;
-    height: 5.1em;
+    margin: 0.5em 0 0.05em 0;
+    padding-left: 0.3em;
+    width: 12em;
+    height: 2.4em;
   }
 }
 @media screen and (max-device-width: 480px) {
@@ -966,7 +966,7 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .btn__carte--3:hover > .btn__carte--valid {
-    transform: translateX(12.3em);
+    transform: translateX(-4.4em);
   }
 }
 .btn__carte--3:hover > .btn__carte--valid .valid {
@@ -995,10 +995,10 @@ span {
 @media screen and (min-width: 1024px) {
   .btn__carte--4 {
     border-radius: 0.7em;
-    margin: 0.5em 0 0.5em 0;
-    padding-left: 1em;
-    width: 45em;
-    height: 5.1em;
+    margin: 0.5em 0 0.05em 0;
+    padding-left: 0.3em;
+    width: 12em;
+    height: 2.4em;
   }
 }
 @media screen and (max-device-width: 480px) {
@@ -1015,7 +1015,7 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .btn__carte--4:hover > .btn__carte--valid {
-    transform: translateX(12.3em);
+    transform: translateX(-4.4em);
   }
 }
 .btn__carte--4:hover > .btn__carte--valid .valid {
@@ -1133,7 +1133,7 @@ span {
 @media screen and (min-width: 1024px) {
   .btn__carte--txt {
     height: 100%;
-    width: 39em;
+    width: 50em;
   }
   .btn__carte--txt h4 {
     overflow: hidden;
@@ -1141,15 +1141,15 @@ span {
     text-overflow: ellipsis;
     flex: auto;
     margin-top: 0.8em;
-    font-size: 1.4em;
+    font-size: 0.5em;
   }
   .btn__carte--txt p {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     flex: auto;
-    margin-top: -1.4em;
-    font-size: 1.35em;
+    margin-top: -0.8em;
+    font-size: 0.45em;
   }
 }
 @media screen and (max-device-width: 480px) {
@@ -1192,14 +1192,14 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .btn__carte--price {
-    margin: 3em 0 0 0.7em;
+    margin: 0.88em 0 0 0.7em;
     left: calc(1% - .5em);
     width: 5em;
     height: 100%;
   }
   .btn__carte--price span {
     align-self: end;
-    font-size: 1.4em;
+    font-size: 0.5em;
   }
 }
 @media screen and (max-device-width: 480px) {
@@ -1241,21 +1241,20 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .btn__carte--valid {
-    margin-left: 1em;
-    width: 5em;
+    width: 2.5em;
     height: 100%;
-    transform: translateX(17.3em);
+    transform: translateX(-2.1em);
     transform-origin: right;
     transition: transform 500ms ease-in-out;
   }
   .btn__carte--valid .valid {
     position: absolute;
-    left: calc(50% - .7em);
-    top: calc(50% - .7em);
-    width: 1.5em;
-    height: 1.5em;
+    left: calc(50% - .5em);
+    top: calc(50% - .4em);
+    width: 0.8em;
+    height: 0.8em;
     transform: rotateZ(-225deg);
-    transition: transform 300ms 300ms ease-in-out;
+    transition: transform 300ms 50ms ease-in-out;
   }
 }
 @media screen and (max-device-width: 480px) {

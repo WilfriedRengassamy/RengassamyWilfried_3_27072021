@@ -18,7 +18,7 @@ h1 {
         font-size: 2em;
     }
     @include desktop {
-        font-size: 5.5em;
+        font-size: 3.5em;
     }
     @include mobile {
         font-size: 4.5rem;
